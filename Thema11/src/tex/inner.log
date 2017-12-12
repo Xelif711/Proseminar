@@ -1,0 +1,28 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2017.10.27)  12 DEC 2017 15:25
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**inner.tex
+(./inner.tex
+LaTeX2e <2017/01/01> patch level 3
+Babel <3.9r> and hyphenation patterns for 8 language(s) loaded.
+./inner.tex:1: Undefined control sequence.
+l.1 \chapter
+            {Einführung}
+? 
+./inner.tex:1: Emergency stop.
+l.1 \chapter
+            {Einführung}
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 5 strings out of 494894
+ 126 string characters out of 6178697
+ 46116 words of memory out of 5000000
+ 3416 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 5i,0n,1p,33b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
