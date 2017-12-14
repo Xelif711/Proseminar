@@ -1,24 +1,19 @@
-class A {
-
-	class innerB{
+class outerA {
+	class innerA{
 		void doSomething(){
-		
 		}
 	}
-	
 	void vC (){
-	
 		class localvC{
-		
 			void doSomethingDifferent(){
 			//...
 			}
 		}
 	}
 }
-class C{
+class outerB{
 
-	static class innerC{
+	static class innerB{
 
 	}
 }

@@ -1,27 +1,6 @@
-import java.util.*;
-import java.lang.*;
+outerA A = new outerA();)
+outerA.innerA a = A.new innerA(); |\label{line:InstNInn}|
+// Instanziierung eines Objekts der Inneren Klasse innerA
 
-class A {
-
-	abstract class innerB  implements Runnable{
-		void doSomething(){
-		
-		}
-	}
-	
-	void vC (){
-	
-		class localvC extends C{
-		
-			void doSomethingDifferent(){
-			//...
-			}
-		}
-	}
-}
-class C{
-
-	static class innerC{
-
-	}
-}
+outerB.innerB b = new outerB.innerB();         |\label{line:InstSInn}|
+// Instanziierung eines Objekts der Statischen Inneren Klasse innerB

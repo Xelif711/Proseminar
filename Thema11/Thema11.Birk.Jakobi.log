@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2017.10.27)  12 DEC 2017 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2017.10.27)  13 DEC 2017 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -451,11 +451,7 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(./Thema11.Birk.Jakobi.aux
-
-LaTeX Warning: Label `lst:system' multiply defined.
-
-)
+(./Thema11.Birk.Jakobi.aux)
 \openout1 = `Thema11.Birk.Jakobi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -470,7 +466,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
- (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 ABD: EveryShipout initializing macros
@@ -551,7 +548,7 @@ Kapitel 2.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 10.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 11.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -560,14 +557,18 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
 (Font)              Font shape `OT1/pcr/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 14.
-)) (./src/tex/listings.tex [3
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 9.
+) [3
 
-] [4
+] (./src/listings/Beispiel2.java)
 
-]
+LaTeX Warning: Reference `[' on page 4 undefined on input line 38.
+
+) (./src/tex/listings.tex [4]
 Kapitel 3.
-(./src/listings/AdverseReactionApp.aj) [5] [6
+(./src/listings/AdverseReactionApp.aj) [5
+
+] [6
 
 ]) (./src/tex/conclusion.tex
 Kapitel 4.
@@ -586,16 +587,16 @@ Anhang A.
 
 ]) (./Thema11.Birk.Jakobi.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14662 strings out of 494894
- 277409 string characters out of 6178697
- 336335 words of memory out of 5000000
- 17670 multiletter control sequences out of 15000+600000
- 12902 words of font info for 41 fonts, out of 8000000 for 9000
+ 14676 strings out of 494894
+ 277591 string characters out of 6178697
+ 336332 words of memory out of 5000000
+ 17680 multiletter control sequences out of 15000+600000
+ 13248 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,9n,54p,419b,1335s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,54p,649b,1338s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Thema11.Birk.Jakobi.dvi (17 pages, 19400 bytes).
+Output written on Thema11.Birk.Jakobi.dvi (17 pages, 24136 bytes).
