@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2017.10.27)  20 DEC 2017 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2017.10.27)  20 DEC 2017 16:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -725,25 +725,33 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count115
 \cp@tempcnt=\count116
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count117
+\float@exts=\toks31
+\float@box=\box40
+\@float@everytoks=\toks32
+\@floatcapt=\box41
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count117
-\lst@gtempboxa=\box40
-\lst@token=\toks31
-\lst@length=\count118
+\lst@mode=\count118
+\lst@gtempboxa=\box42
+\lst@token=\toks33
+\lst@length=\count119
 \lst@currlwidth=\dimen156
-\lst@column=\count119
-\lst@pos=\count120
+\lst@column=\count120
+\lst@pos=\count121
 \lst@lostspace=\dimen157
 \lst@width=\dimen158
-\lst@newlines=\count121
-\lst@lineno=\count122
+\lst@newlines=\count122
+\lst@lineno=\count123
 \lst@maxwidth=\dimen159
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count123
-\lst@skipnumbers=\count124
-\lst@framebox=\box41
+\c@lstnumber=\count124
+\lst@skipnumbers=\count125
+\lst@framebox=\box43
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -753,20 +761,20 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (./Thema11.Birk.Jakobi.aux)
 \openout1 = `Thema11.Birk.Jakobi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
  ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box42
+\AtBeginShipoutBox=\box44
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -779,7 +787,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 Package pdflscape Info: Auto-detected driver: dvips (dvips) on input line 125.
 )
-\c@lstlisting=\count125
+\c@lstlisting=\count126
 
 (./src/tex/cover_de.tex
 File: src/pic/logo.eps Graphic file (type eps)
@@ -854,30 +862,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--53
 
  []
 
-[9] [10] (./src/listings/bsp_AnwAnn.java) (./src/listings/bsp_AnwAnnB.java))
-(./src/tex/conclusion.tex [11] [12] [13] [14
+[9] [10] (./src/listings/bsp_AnwAnn.java)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [11]
+[12] (./src/listings/bsp_AnwAnnB.java) [13] (./src/listings/bsp_AnwLok.java))
+(./src/tex/conclusion.tex [14]
 Kapitel 3.
 File: src/pic/logo.eps Graphic file (type eps)
-<src/pic/logo.eps> [15] [16
+<src/pic/logo.eps> [15
 
-]) (./Thema11.Birk.Jakobi.bbl
-Overfull \hbox (0.6236pt too wide) in paragraph at lines 15--17
+]) (./Thema11.Birk.Jakobi.bbl [16
+
+]
+Overfull \hbox (247.575pt too wide) in paragraph at lines 15--18
+[]\OT1/cmr/m/n/10.95 JDK 1.1.4 Do-cu-men-ta-ti-on \OT1/pcr/m/n/10.95 https://ww
+w.cs.princeton.edu/courses/archive/fall97/cs461/jdkdocs/index.html\OT1/cmr/m/n/
+10.95 ,
+ []
+
+
+Overfull \hbox (0.6236pt too wide) in paragraph at lines 20--22
 []\OT1/cmr/m/n/10.95 Java Lan-gua-ge Spe-ci-fi-ca-ti-on \OT1/pcr/m/n/10.95 http
 s://docs.oracle.com/javase/specs/\OT1/cmr/m/n/10.95 ,
  []
 
-) [17
-
-] (./Thema11.Birk.Jakobi.aux) ) 
+) [17] (./Thema11.Birk.Jakobi.aux) ) 
 Here is how much of TeX's memory you used:
- 14290 strings out of 494894
- 270781 string characters out of 6178697
- 500389 words of memory out of 5000000
- 17285 multiletter control sequences out of 15000+600000
+ 14370 strings out of 494894
+ 271805 string characters out of 6178697
+ 501825 words of memory out of 5000000
+ 17358 multiletter control sequences out of 15000+600000
  13248 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,6n,54p,424b,1333s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,54p,424b,1335s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Thema11.Birk.Jakobi.dvi (20 pages, 70372 bytes).
+Output written on Thema11.Birk.Jakobi.dvi (20 pages, 79072 bytes).

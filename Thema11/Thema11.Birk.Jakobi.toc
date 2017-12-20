@@ -8,6 +8,6 @@
 \contentsline {section}{\numberline {2.2}Anonyme \& Lokale Klassen}{8}
 \contentsline {subsection}{\numberline {2.2.1}Implementierung}{8}
 \contentsline {subsection}{\numberline {2.2.2}Vorteile / Nutzen}{11}
-\contentsline {subsection}{\numberline {2.2.3}Anwendung / Best Practices}{11}
+\contentsline {subsection}{\numberline {2.2.3}Anwendung / Best Practices}{12}
 \contentsline {chapter}{\numberline {3}Zusammenfassung und Ausblick}{15}
-\contentsline {chapter}{Literaturverzeichnis}{17}
+\contentsline {chapter}{Literaturverzeichnis}{16}
