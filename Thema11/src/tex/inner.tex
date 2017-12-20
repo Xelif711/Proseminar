@@ -2,38 +2,110 @@
 \section{(Statische) Innere Klassen}
 \subsection {Implementierung}
 
-
 \begin{figure}[hbt]
 \lstset{language=Java}
 \lstinputlisting[
 label=lst:ImpInn,
-escapechar=|,   
-caption=Beispielimplemntierung  von inneren Klassen in Java] {src/listings/Beispiel1.java}
+escapechar=|,
+caption=Beispielimplementierung von inneren Klassen in Java] {src/listings/bsp_ImpInn.java}
 \end{figure}
 
+Eine innere Klasse wird in Java durch das Erstellen einer Klasse innerhalb eines bestehenden Klassenblocks implementiert.
+Der Name muss unterschiedlich sein. Dabei kann diese mit allen Modifiers versehen werden, die auch einer äußeren Klasse zur Verfügung stehen - sie darf aber auch private, protected oder static sein, da sie letzten Endes ein Attribut der äußeren Klasse ist.
+Obwohl klassische Mehrfachvererbung in Java nicht möglich ist, ist es inneren Klassen erlaubt, von anderen Klassen zu erben.
+Falls es gleichnamige Attribute gibt, wird das Attribut der äußeren Klasse vom Attribut der Oberklasse verdeckt.
+Außerdem können in einer inneren Klasse Attribute implementiert werden. Diese verdecken wiederum gleichnamige Attribute der Ober- oder äußeren Klasse.
+Bei einer nicht-statischen inneren Klasse erlaubt Java keine statischen Attribute, da die innere Klasse an sich ein Attribut der äußeren Klasse ist und sonst ein nicht-statisches Attribut statische Elemente enthalten würde.
+Falls die Klasse statisch ist, verhält sich diese ähnlich einer normalen Klasse: Es dürfen statische sowie instanzgebundene Attribute verwendet werden, da die Klasse, obwohl eigentlich ein statisches Attribut, instanziiert werden kann (Listing \ref{lst:ImpInn}).
 
-Eine Innere Klasse wird in Java durch das Erstellen einer Klasse innerhalb einer Klasse implementiert (Siehe Beispiel \ref{lst:ImpInn}). Der Name muss unterschiedlich sein. Dabei kann diese mit allen Modifiers versehen werden, die auch einer äußeren Klasse zur Verfügung stehen - sie darf aber auch private, protected oder static sein, da sie letzten Endes ein Attribut der äußeren Klasse ist.
-Auch Vererbung ist möglich. Die Innere Klasse hat im Normalfall Zugang zu allen Methoden und Variablen der äußeren Klasse - sogar zu denen, die als private deklariert wurden. Es ist weiterhin möglich, Innere Klassen zu schachteln. 
-
-Es können in einer Innere Klasse Attribute implementiert werden. Dabei werden gleichnamige Attribute der äußeren Klasse wie bei Vererbung von der Innere Klasse überdeckt. Jedoch erlaubt Java keine statischen Attribute, da die Innere Klasse ein instanziertes Attribut der äußeren Klasse ist.
-
-Eine große Unterscheidung muss gemacht werden, wenn eine Innere Klasse statisch ist. In diesem Fall greift die Innere Klasse aus einem statischen Kontext auf die Attribute der äußeren Klasse zu - und kann somit nur statische Methoden und Variablen benutzen. Im Endeffekt sind dann auch die Attribute der statischen inneren Klasse statisch.
 
 {\bf Instanziierung}
+
+Eine normale innere Klasse ist an eine Instanz ihrer äußere Klasse gebunden. Bevor der Konstruktor der inneren Klasse aufgerufen werden kann, muss also zuerst eine Instanz der äußeren Klasse generiert werden.
+Dann wird der Konstruktor der inneren Klasse von der Instanz der äußeren Klasse aus aufgerufen.
+Im Gegensatz dazu benötigt eine statische innere Klasse keine Instanz der äußeren Klasse.
+In diesem Fall darf einfach der Konstruktor der statischen inneren Klasse aufgerufen werden, jedoch über den Namensraum der äußeren Klasse.
+In beiden Fällen werden die Objektdeklarationen über den Namensraum der äußeren Klasse geregelt (Listing \ref{lst:InstInn}) \cite{goll2013java}.
 
 
 \begin{figure}[hbt]
 \lstset{language=Java}
 \lstinputlisting[
 label=lst:InstInn,
-escapechar=|,   
-caption=Beispielinstanziierung von inneren Klassen in Java] {src/listings/Beispiel2.java}
+escapechar=|,
+caption=Beispielinstanziierung von inneren Klassen in Java] {src/listings/bsp_InstInn.java}
 \end{figure}
 
-Eine normale Innere Klasse ist an ihre äußere Klasse gebunden und muss daher mit einem Objekt der äußeren Klasse instanziiert (Siehe Zeile \ref{line:InstNInn} Beispiel \ref{lst:InstInn}). Bevor der Konstruktor der Inneren Klasse aufgerufen wird, muss also zuerst ein Konstruktor der äußeren Klasse aufgerufen werden.
-Im Gegensatz dazu benötigt eine statische Innere Klasse keine Instanz der äußeren Klasse. In diesem Fall darf einfach ein Konstruktor der statischen Inneren Klasse im Namensraum der äußeren Klasse genutzt werden (Siehe Zeile \ref{line:InstSInn} Beispiel \ref{lst:InstInn}).
 
-{\bf Vererbung}
+{\bf Sichtbarkeit \& Zugriff}
 
-Obwohl klassische Mehrfachvererbung in Java nicht möglich ist, ist es Innere Klassen erlaubt, von anderen Klassen zu erben. Dies ist potenziell fehleranfällig. Der Compiler erkennt zwar simple Fehler, aber diese Fehlererkennung hält sich in engen Grenzen (Listing x). Jedoch bringen Innere Klassen auch die Möglichkeit einer Mehrfachvererbung ohne Interfaces, da die Innere Klasse Zugriff auf ihre äußere Klasse hat sowie zusätzlich von einer externen Klasse erben kann. Falls es gleichnamige Attribute gibt, wird das Attribut der äußeren Klasse vom Attribut der Oberklasse verdeckt(\ref[lst:InstInn]).
-Wenn man dieses Prinzip weiter verfolgt, kann man potenziell mit weiteren verschachtelten Innere Klassen von beliebig vielen weiteren Klassen erben.
+Generell gilt, dass die innere (statische) Klasse je nach Modifier genau wie ein Attribut der äußeren Klasse gesehen wird, was dann implizit auch für alle Attribute der inneren Klasse gilt, falls diese einer weniger starken Modifier benutzen.
+Auch muss stets der Namensraum der äußeren Klasse benutzt werden, sollte auf Attribute der inneren Klasse zugegriffen werden.
+Weiterhin hat die innere Klasse im Normalfall Zugang zu allen Methoden und Variablen der äußeren Klasse - sogar zu denen, die als private deklariert wurden.
+Dies gilt andersherum ebenso: Auch die äußere Klasse kann auf die komplette innere Klasse zugreifen, gleich ob diese privat ist oder nicht.
+Eine große Unterscheidung muss jedoch gemacht werden, wenn eine innere Klasse statisch ist. Da in diesem Fall keine Instanz der äußeren Klasse verbunden ist, können auch lediglich statische Attribute der äußeren Klasse benutzt werden (Listing \ref{lst:SZInn}).
+
+\begin{figure}[hbt]
+\lstset{language=Java}
+\lstinputlisting[
+label=lst:SZInn,
+escapechar=|,
+caption=Sichtbarkeitsbeispiel für Innere Klassen in Java] {src/listings/bsp_SZ_Inn.java}
+\end{figure}
+
+
+\subsection{Vorteile / Nutzen}
+
+Ein Grund für die Benutzung der Inneren Klassen ist die Möglichkeit, innerhalb der Inneren Klasse auf die privaten Atribute der äußeren Klasse zugreifen und diese modifizieren zu können.
+Dies ist insbesonders ein Vorteil für die Datenkapselung, da man innerhalb der Inneren Klasse Mithilfe von Funktionen der Oberklasse alle Atribute der Äußeren Klasse bearbeiten kann, ohne dass die Oberklasse (Und somit weitere Klassen) Zugriff auf diese Daten haben können.
+
+Ein Grund dafür ist die Möglichkeit, dass eine Innere Klasse, welche implizit die Methoden und Variablen der Äuseren Klasse erbt, eine weitere Oberklasse erweitern kann und somit auch deren Variablen und Methoden erbt.
+Außerdem können Klassen, welche von der Inneren Klasse erben (was möglich ist, wenn diese nicht als private, protected oder final markiert sind) über die Innere Klasse auf die Attribute und Methoden der Äußeren Klasse zugreifen, ohne das diese direkt von ihr erbt. Dies kann jedoch auch, wenn man die Möglichkeit nicht betrachtet, zu Problemen führen.
+
+Dadurch entsteht jedoch die Möglichkeit, dass durch die mögliche Sichtbarkeit der Inneren Klasse nach außen hin es zu Zyklischen Vererbungen kommen kann, also dass eine Klasse (indirekt) von sich selbst erbt und somit die Eigenen Methoden möglicherweise überschreibt (\cite{DBLP:journals/corr/abs-1301-6260}) (Listing \ref{lst:ZclInn}).
+Im Beispiel \ref{lst:ZclInn}  wird die Zyklische Vererbung nicht erkannt, da die Klasse innerA die Klasse A nicht extended und somit nicht direkt von ihr erbt, ud somit der Java-Compiler die Tatsache, dass innerA durch A von B erbt, nicht erkennt und den Code somit ihne Fehler kompiliert.
+Dies kann, wenn es nicht bemerkt wird, zu falschem, und aus der Sicht der Entwickler, sonderbarem verhalten führen, obwohl die Implementierung semantisch Korrekt ist.
+Um die möglichkeit zu verringern, dass eine Zyklische Vererbung auftreten kann, wurde das Sogenannte PICIP (Eine Kurzform für "'Potential Inner Class Inheritance Problem"') enwickelt, welche das Potential beschreibt, dass Vererbungsprobleme bei Inneren Klassen aufteten könnte.
+
+\begin{figure}[hbt]
+\lstset{language=Java}
+\lstinputlisting[
+label=lst:ZclInn,
+escapechar=|,
+caption=Von Java nicht erkannte Zyklische Vererbung] {src/listings/bsp_Zcl_A.java}
+\end{figure}
+\newpage
+
+Dies erleichtert die Implementierung einer Adapterklasse, welche genau an der Stelle mit den Entsprechenden Methoden einer Externen Klasse deklariert werden kannn, an welcher sie gebraucht wird, und man nicht notwendigerweise Umwege über Interfaces gehen muss, um die Entsprechende Beziehungen zwischen den Klassen zu bekommen.
+
+Man kann durch die Deklaration einer benötigten Klasse als Innere Klasse an der entsprechenden Stelle die Lesbarkeit/Übersichtlichkeit des Codes erhöhen.
+Dadurch ist es jedoch Möglich, dass der Code durch zu viele bzw. zu tief ineinander verschachtelte Innere Klassen unübersichlich und somit unangenehm zu Lesen wird. Allgemein gilt dazu, dass so wenig Klassen wie möglich ineinander geschachtelt werden sollten, um besonders die Fehlererkennung zu verbessern.
+
+Außerdem werden Namenskonflikte mit anderen Klassen im Paket vermieden, da man mehrere Klassen mit Gleichem Namen haben kann, die (Statische) Innere Klasse jedoch über Ihre Äußere Klasse Instanziiert werden muss und es somit nicht zu Verwechslungen und Konflikten mit gleichnamigen Klassen im Paket kommen kann.
+
+\subsection{Anwendungen / Best Practices}
+
+Innere Klassen sollten hauptsächlich dann verwendet werden, wenn eine Klasse ausschließlich von einer weiteren benutzt wird.
+
+Beispiel: Der Ladeadapter
+
+In diesem simplen Beispiel geht es darum, einen Adapter für den Ladevorgang eines Handys der Marke Samsong zu bauen.
+ Wir benötigen für den Ladevorgang ein Objekt, welches das Interface Ladegeraet implementiert.
+Wir haben jedoch kein passendes Ladegeraet von Samsong zur Verfuegung, sondern nur ein Ladegeraet eines EiPhones, welches das Interface nicht implementiert.
+Das jedoch auch dieses im Prinzip laden kann, versuchen wir, diese Funktionalität für unser Handy zu benutzen.
+Dies koennen wir durch die Einbindung der innere Klasse Adapter erreichen, welche das Interface implementiert.
+Jedoch steht uns hier auch das Ladegeraet des EiPhones zur Verfuegung.
+Dieses instanzieren wir und ueberschreiben die Methode des Interfaces dadurch, dass wir hier die Lademethode des EiPhones benutzen.
+Damit koennen wir eine Instanz des Adapters als Ladegeraet für unser Handy benutzen, obwohl uns kein "richtiges" Ladegeraet zur Verfuegung stand.
+
+\newpage
+\begin{figure}[hb]
+\lstset{language=Java}
+\lstinputlisting[
+label=lst:AnwInn,
+escapechar=|,
+caption=Beispielanwendug von Inneren Klassen in einem Adapter] {src/listings/bsp_AnwInn.java}
+\end{figure}
+
+
+\newpage

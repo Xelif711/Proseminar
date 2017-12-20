@@ -3,7 +3,11 @@
 \contentsline {chapter}{\numberline {2}Hauptteil}{3}
 \contentsline {section}{\numberline {2.1}(Statische) Innere Klassen}{3}
 \contentsline {subsection}{\numberline {2.1.1}Implementierung}{3}
-\contentsline {chapter}{\numberline {3}Code Listings}{5}
-\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{7}
-\contentsline {chapter}{Literaturverzeichnis}{9}
-\contentsline {chapter}{\numberline {A}z.\,B. Programmdokumentation}{9}
+\contentsline {subsection}{\numberline {2.1.2}Vorteile / Nutzen}{5}
+\contentsline {subsection}{\numberline {2.1.3}Anwendungen / Best Practices}{6}
+\contentsline {section}{\numberline {2.2}Anonyme \& Lokale Klassen}{8}
+\contentsline {subsection}{\numberline {2.2.1}Implementierung}{8}
+\contentsline {subsection}{\numberline {2.2.2}Vorteile / Nutzen}{11}
+\contentsline {subsection}{\numberline {2.2.3}Anwendung / Best Practices}{11}
+\contentsline {chapter}{\numberline {3}Zusammenfassung und Ausblick}{15}
+\contentsline {chapter}{Literaturverzeichnis}{17}
