@@ -1,0 +1,23 @@
+\begin{thebibliography}{www17}
+
+\bibitem[GH13]{goll2013java}
+J.~Goll and C.~Heinisch.
+\newblock {\em Java als erste Programmiersprache: Ein professioneller Einstieg
+  in die Objektorientierung mit Java}.
+\newblock Springer Fachmedien Wiesbaden, 2013.
+
+\bibitem[Tee13]{DBLP:journals/corr/abs-1301-6260}
+Sim{-}Hui Tee.
+\newblock Problems of inheritance at java inner class.
+\newblock {\em CoRR}, abs/1301.6260, 2013.
+
+\bibitem[www97]{Oracle:JDK_Doku1.1.4}
+{JDK 1.1.4 Documentation {\tt
+  https://www.cs.princeton.edu/courses/archive/fall97/cs461/jdkdocs/index.html}},
+  december 1997.
+
+\bibitem[www17]{Oracle:JLS9}
+{Java Language Specification {\tt https://docs.oracle.com/javase/specs/}},
+  december 2017.
+
+\end{thebibliography}

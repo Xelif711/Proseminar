@@ -1,0 +1,21 @@
+Vorteile von  Inneren Klassen:
+
+Ein Vorteil der Benutzung der Inneren Klassen ist die Möglichkeit, innerhalb der Inneren Klasse auf die privaten Atribute der äußeren Klasse zugreifen und diese modifizieren zu können.
+Dies ist insbesonders ein Vorteil für die Datenkapselung, da man innerhalb der Inneren Klasse Mithilfe  von Funktionen der Oberklasse diese bearbeiten kann, ohne dass die Oberklasse (Und somit weitere Klassen) Zugriff auf diese Daten haben können.
+Ein weiterer Vorteil ist die erleichterte Implementierung einer Adapterklasse, welche genau an der Stelle mit den Entsprechenden Methoden einer Externen Klasse deklariert werden kannn, an welcher sie gebraucht wird, und man nicht notwendigerweise Umwege über Interfaces gehen muss, um die Entsprechende Beziehungen zwischen den Klassen zu bekommen zu bekommen.
+Ein Grund dafür ist die Möglichkeit, dass eine Innere Klasse, welche implizit die Methoden und Variablen der  Äuseren Klasse erbt, eine weitere Oberklasse erweitern kann und somit auch deren Variablen und Methoden erbt.
+Außerdem können Klassen, welche von der Inneren Klasse erben (was möglich ist, wenn diese nicht als private, protected oder final markiert sind) über die Innere Klasse auf die Attribute und Methoden der Äußeren Klasse zugreifen, ohne das diese direkt von ihr erbt. Dies kann jedoch auch, wenn man die Möglichkeit nicht betrachtet, zu Problemen führen. 
+
+Nachteile:
+
+Es ist Möglich, dass der code durch zu viele bzw. ineinande verschachtelte Innere Klassen unübersichlich und somit unagenehm zu Lesen wird. Allgemein gilt dazu, dass so wenig Klassen wie möglich ineinander geschachtelt werden sollten, um besonders die Fehlererkennung zu verbessern.
+Außerdem besteht die Möglichkeit, dass durch die mögliche Sichtbarkeit der Inneren Klasse nach außen hin es zu Zyklischen Vererbungen kommen kann, also dass eine Klasse (indirekt) von sich Selbst erbt und somit die Eigenen Methoden möglicherweise überschreibt (\cite{DBLP:journals/corr/abs-1301-6260}).
+Dies kann, wenn es nicht bemerkt wird, zu falschem, und aus der Sicht der Entwickler, sonderbarem verhalten führen, obwohl die Implementierung semantisch Korrekt ist.
+Um die möglichkeit zu verringern, dass eine Zyklische Vererbung auftreten kann, wurde das Sogenannte PICIP (Eine Kurform für "Potential Inner Class Inheritance Problem") enwickelt, welche das Potential beschreibt, dass Vererbungsprobleme bei Inneren Klassen aufteten könnte.
+Dieses System wird hier: \cite{DBLP:journals/corr/abs-1301-6260} eingeführt und erklärt.
+
+Vorteile von statischen Inneren Klassen:
+
+Man kann durch die Deklaration einer Klasse als statische Innere Klasse an der Benötigten Stelle die Lesbarkeit/Übersichtlicjkeit de Codes erhöhen, wobei wieder druch zu tiefe Schatelung eben diese Übersichtlichkeit verloren gehen kann.
+Außerdem werden Namenskoflikte mit aderen Klassen im Paket vermieden, da man mehrere Klassne mit dem Gleichen Namen haben kann, die (Statische) Innere Klasse jedoch über Ihre Äußere Klasse Instanziiert werden muss und es Somit nicht zu Verwechsulgen mit gleichnamigen Klassen im Paket kommen kann.
+

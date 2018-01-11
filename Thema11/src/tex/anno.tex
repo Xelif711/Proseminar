@@ -1,0 +1,121 @@
+\section{Anonyme \& Lokale Klassen}
+\subsection {Implementierung}
+
+{\Large \bf Anonyme Klassen}
+
+{\bf Implementierung und Instanziierung}
+
+Eine anonyme Klasse wird in Java nach Konstruktoraufruf einer beliebigen Klasse / Interfaces definiert (Listing \ref{lst:ImAnn}).
+Dazu wird nach dem Aufruf ein Codeblock mit geschweiften Klammern geöffnet, in dem die instanziierte Klasse beliebig um Methoden und Datenfelder erweitert werden kann, welche nicht statisch sein dürfen.
+Da die Anonyme Klasse von der eigentlich instaziierten Klasse erbt und somit eine Unterklasse dieser ist, können dabei auch Methoden überschrieben werden.
+Die konkrete Instanz kann jedoch selbst nur auf schon in der Oberklasse deklarierte Methoden und Variablen zugreifen, da das Objekt der Anonymen Klasse automatisch zu einem Objekt der Oberklasse gecastet wird, welche jedoch selbst, wenn sie uberschrieben werden, auch auf die Methoden der Anonymen Klasse Zugreifen dürfen.
+Da diese eigentlich neue Klasse keinen Namen zugewiesen bekommen hat, wird sie anonym genannt.
+Aufgrund des einmaligen, instanzgebundenen Auftretens einer anonymen Klasse sind weitere Modifikatoren weder sinnvoll noch möglich (\cite{goll2013java}) (\cite{Oracle:JLS9}).
+
+\begin{figure}[h]
+\lstset{language=Java}
+\lstinputlisting[
+label=lst:ImAnn,
+escapechar=|,
+caption=Beispielimplementierung und -instanziierung einer Anonymen Klasse in Java] {src/listings/bsp_ImAnn.java}
+\end{figure}
+
+{\bf Sichtbarkeit \& Zugriff}
+
+Es liegt in der Natur der Anonymen Klassen, dass auf sie lediglich über die mit ihr verbundenen Instanz zugegriffen werden kann.
+Weiterhin kann die anonyme Klasse auch nur mit ihren eigenen Attributen arbeiten bzw. denen der Oberklasse.
+
+\newpage
+
+{\Large \bf Lokale Klassen}
+
+{\bf Implementierung}
+
+Lokale Klassen sind Innere Klassen, welche in Methoden eingebunden werden (Listing \ref{lst:ImLok}).
+Im Gegensatz zu den Inneren Klassen können hier keine zusätliche Modifiers verwendet werden, da die lokale Klasse nicht das Attribut einer Klasse ist.
+Weiterhin darf sie nicht den Namen der umschließenden Klasse haben.
+Die lokale Klasse darf jedoch von einer anderen Klasse erben und nicht-statische Attribute haben.
+
+{\bf Sichtbarkeit und Zugriff}
+
+Die lokale Klasse an sich ist nur innerhalb der Methode sichtbar. Welche Art von Zugang die lokale Klasse zur umschließenden Klasse hat, hängt vom Modifier der einschließenden Methode ab, verläuft aber sonst parallel zu den inneren Klassen.
+Ist die Methode statisch, kann die lokale Klasse somit auch nur auf statische Attribute der umschließenden Klasse zugreifen. Ist die Methode wiederum instanzgebunden, dann hat diese auf alle Attribute der umschließenden Klasse Zugriff.
+Auf Methodenvariablen selbst hat die Klasse keinen Zugriff, außer diese wurden als final deklariert. Falls die lokale Klasse erbt, verdecken gleichnamige Attribute der Oberklasse die der umschließenden Klasse.
+\\
+\\
+\begin{figure}[ht]
+\lstset{language=Java}
+\lstinputlisting[
+label=lst:ImLok,
+escapechar=|,
+caption=Beispielimplementierung einer Lokalen Klasse in Java] {src/listings/bsp_ImLok.java}
+\end{figure}
+
+\newpage
+\newpage
+
+\subsection{Vorteile / Nutzen}
+
+{\bf Anonyme Klassen}
+
+Anonyme Klassen werden haupsächlich und im Idealfall nur benutzt, wenn man eine modifizierte Instanz einer Klasse bzw. eine Instanz eines Interfaces nur einmal gebraucht wird und somit das übertragen der Modifikationen in eine (Innere) Klasse nicht sinnvoll wäre.
+Außerdem werden sie benutzt um Instanzen von Abstrakten Klassen zu erzeugen, da man direkt die abstrakten Methoden überschreiben kann, ohne vorher eine neue Unterklasse der entsprechenden Abstrakten Klasse zu deklarieren.
+Somit hilft die Benutzung von Anonymen Klassen der Übersichtlichkeit, Lesbarkeit und Verständnis des Codes, da Veränderungen an den Klassen direkt an den benötigten Stellen durchgeführt werden.
+Wenn die Modifikationen jedoch in verschiedenen Klassen bzw. Methoden gebraucht werden, sollte jedoch auf eine (Statische) Innere Klasse ausgewichen werden, um die Lesbarkeit des Codes zu erhöhen.
+
+{\bf Lokale Klassen}
+
+Die Lokale Klasse kann nur im Bereich ihrer Methode eingesetzt werden und nicht als Oberklasse dienen.
+Lokale Klassen sollten nur benutzt werden, wenn die neu implementierten Methoden nur in der entsprechenden Methode gebraucht werden.
+Wenn diese Funktionen jedoch möglicherweise in mehreren Methoden der Äußeren Klasse benötigt werden, sollte jedoch eine Innere Klasse bzw. "'Normale"' Klasse benutzt werden.
+
+\newpage
+\subsection{Anwendung / Best Practices}
+
+
+\begin{figure}[H]
+\lstset{language=Java}
+\lstinputlisting[
+label=lst:AnwAnn,
+escapechar=|,
+caption=Mögliche GUI-Implementierung mit Inneren Klassen] {src/listings/bsp_AnwAnn.java}
+\end{figure}
+
+
+{\bf Beispiel: Eine einfache GUI mit Inneren / Anonyme Klassen}
+
+In diesem einfachen Anwendungsbeispiel soll die Anwendung in einem Graphical User Interface (GUI) modelliert werden, die ereignisgesteuert ist.
+Es gibt zwei Buttons, die nach Drücken etwas tun sollen.
+Die Ereignisbehandlung an sich wird hierbei durch Elemente des Windows Abstract Toolkit (aus jawa.awt) geregelt.
+Um nun die Ereignisbehandlung zu implementieren, brauchen wir eine Klasse, welche das ActionListener-Interface aus dem Toolkit implementiert und die Methode dem Aufrufer entsprechend ändert.
+Insgesamt benötigen wir also 3 Klassen: Die Anwendung (ButtonPressing), die GUI (GUI) und die Ereignisbehandlung (MyEventHandler). Dabei wird die Ereignisbehandlung nur von der GUI benutzt, die GUI wiederum nur von der Anwendung. Dabei benutzt die Ereignisbehandlung Methoden, die in der Anwendung aufgerufen werden müssen.
+Die Klassen sind also semantisch stark miteinander verbunden und brauchen teilweise vollen Zugriff aufeinander.
+Aus den Umständen folgt, dass hier eine entsprechende Schachtelung der Klassen von Vorteil wäre, was sich sehr gut mit den inneren Klassen realisieren lässt.
+Dabei wird die Ereignisbehandlung eine innere Klasse des GUI, die ihrerseits eine innere Klasse der Anwendung wird (Listing \ref{lst:AnwAnn}).
+So lässt sich der Code prägnant an der Stelle formulieren, wo er gebraucht wird.
+Währenddessen sind die betroffenen Klassen sonst komplett unsichtbar.
+Doch hier können auch die anonymen Klassen genutzt werden, denn momentan agiert nur eine Instanz des EventHandlers, die je nach Button einen Unterschied macht. Es kann jedoch deutlich eleganter sein, mehrere "'Einweginstanzen"' zu haben, die dann nur auf einen Button reagieren und dementsprechend nur eine Methode überschreiben müssen.
+Dadurch fällt der Overhead durch if-Cases weg und man kann noch klarer sehen, was das Drücken eines bestimmten Buttons auslösen soll (Listing \ref{lst:AnwAnnB}).
+
+\begin{figure}[H]
+\lstset{language=Java}
+\lstinputlisting[
+label=lst:AnwAnnB,
+escapechar=|,
+caption=Mögliche GUI-Implementierung mit Anonymen statt Inneren Klassen] {src/listings/bsp_AnwAnnB.java}
+\end{figure}
+\newpage
+{\bf Beispiel für lokale Klassen: Kuchenverkostung}
+
+In diesem Beispiel soll das Essen eines Kuchens modelliert werden.
+ Dabei gibt es die Klasse Kuchen. Der Kuchen kann je nach seinem Geschmack Feedback bekommen.
+Dieses Feedback kommt von verschiedenen Menschen, die unterschiedliche Geschmäcker haben.
+Da die Kuchentester jedoch nur in dieser Methode gebraucht werden, implementieren wir sie auch nur in einer lokalen Klasse in getFeedback.
+
+\begin{figure}[H]
+\lstset{language=Java}
+\lstinputlisting[
+label=lst:AnwLok,
+escapechar=|,
+caption=Beispiel für die Anwendung von lokalen Klassen] {src/listings/bsp_AnwLok.java}
+\end{figure}
