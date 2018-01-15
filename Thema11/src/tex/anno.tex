@@ -8,7 +8,7 @@
 Eine anonyme Klasse wird in Java nach Konstruktoraufruf einer beliebigen Klasse / Interfaces definiert (Listing \ref{lst:ImAnn}).
 Dazu wird nach dem Aufruf ein Codeblock mit geschweiften Klammern geöffnet, in dem die instanziierte Klasse beliebig um Methoden und Datenfelder erweitert werden kann, welche nicht statisch sein dürfen.
 Da die Anonyme Klasse von der eigentlich instaziierten Klasse erbt und somit eine Unterklasse dieser ist, können dabei auch Methoden überschrieben werden.
-Die konkrete Instanz kann jedoch selbst nur auf schon in der Oberklasse deklarierte Methoden und Variablen zugreifen, da das Objekt der Anonymen Klasse automatisch zu einem Objekt der Oberklasse gecastet wird, welche jedoch selbst, wenn sie uberschrieben werden, auch auf die Methoden der Anonymen Klasse Zugreifen dürfen.
+Die konkrete Instanz kann jedoch selbst nur auf schon in der Oberklasse deklarierte Methoden und Variablen zugreifen, da das Objekt der Anonymen Klasse automatisch zu einem Objekt der Oberklasse gecastet wird, welche jedoch selbst, wenn sie überschrieben werden, auch auf die Methoden der Anonymen Klasse Zugreifen dürfen.
 Da diese eigentlich neue Klasse keinen Namen zugewiesen bekommen hat, wird sie anonym genannt.
 Aufgrund des einmaligen, instanzgebundenen Auftretens einer anonymen Klasse sind weitere Modifikatoren weder sinnvoll noch möglich (\cite{goll2013java}) (\cite{Oracle:JLS9}).
 
