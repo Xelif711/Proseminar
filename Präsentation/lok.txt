@@ -1,0 +1,3 @@
+-Lokale Klassen sind Innere Klassen, welche innerhalb einer Methoden deklariert werden
+-Die Deklaration erfolgt Synomnym zu der einer Inneren Klasse,
+    nur das keine Modifikatoren verwendet werden dürfen
