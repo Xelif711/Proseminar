@@ -1,8 +1,5 @@
 -Lokale Klassen sind Innere Klassen, welche innerhalb einer Methoden deklariert werden
--Die Deklaration erfolgt Synomnym zu der einer Inneren Klasse,
-    nur das keine der Zusätzliche Modifikatoren verwendet werden dürfen
+-Die Deklaration erfolgt Synomnym zu der einer Inneren Klasse, nur das keine der Zusätzliche Modifikatoren verwendet werden dürfen
 -Sie ist nur innehalb der Methode Sichtbar, in welcher sie Deklariert wurde
--Es kann von der lokalen Klasse aus nur auf unveränderbare Variable der
-    Methode zugreifen
--Falls die Methode ist Statisch kann sie nur auf Statische variablen der
-    äußere Klasse zugreifen, sonst auf alle
+-Es kann von der lokalen Klasse aus nur auf unveränderbare Variable der Methode zugreifen
+-Falls die Methode ist Statisch kann sie nur auf Statische variablen der äußere Klasse zugreifen, sonst auf alle

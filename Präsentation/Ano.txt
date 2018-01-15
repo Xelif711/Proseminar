@@ -1,10 +1,6 @@
--Anonyme Klassen sind eine Instangebundene, erweiterte und/oder veränderte Unterklasse
-    einer "Normalen" Klasse
--Die Instanziierung/Deklaration erfolgt durch das ergänzen der Instaziierung
-    einer Klasse um eine geschweifte Klammer mit dem gewünschten Code
--Somit erklärt sich auch der Name des konzepts, da die Neue Klasse
-    nicht benannt werden kann
--Da somit Funktionen erweitert und Überschrieben werden können, kann somit
-    auch eine Instanz eines Interfaces oder einer Abstrakten Klasse erstellt werden
+-Anonyme Klassen sind eine Instangebundene, erweiterte und/oder veränderte Unterklasse einer "Normalen" Klasse
+-Die Instanziierung/Deklaration erfolgt durch das ergänzen der Instaziierung einer Klasse um eine geschweifte Klammer mit dem gewünschten Code
+-Somit erklärt sich auch der Name des konzepts, da die Neue Klasse nicht benannt werden kann
+-Da somit Funktionen erweitert und Überschrieben werden können, kann somit auch eine Instanz eines Interfaces oder einer Abstrakten Klasse erstellt werden
 
 A anonymous = new A(){...};
