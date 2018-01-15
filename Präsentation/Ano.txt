@@ -1,0 +1,9 @@
+-Anonyme Klassen sind eine Instangebundene, erweiterte und/oder veränderte Unterklasse
+    einer "Normalen" Klasse
+-Sie können nur innerhalb einer Methode deklariert und Instaziiert
+    werden, wobei beides zur gleichen Zeit innerhalb einer Anweisung erfolgt
+-Die Instanziierung/Deklaration erfolgt durch das ergänzen der Instaziierung
+    einer Klasse um eine geschweifte Klammer mit dem gewünschten Code
+-Da somit Funktionen erweitert und Überschrieben werden können, kann somit
+    auch eine Instanz eines Interfaces oder einer Abstrakten Klasse erstellt werden
+-
