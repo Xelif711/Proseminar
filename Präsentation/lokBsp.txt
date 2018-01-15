@@ -1,0 +1,4 @@
+Lokale Klassen werden benutzt, wenn man die in Ihr neu Implementierten Methoden nur in dieser Methode braucht,
+jedoch auch wenn die Methoden direkten Zugriff auf die Methodenvariablen haben soll
+Sie wird benutzt, wenn die Funktion an mehreren Stellen in der gleichen Methode gebraucht wird
+    ->Wenn sie jedoch in mehrere Methoden bzw. Klassen gebraucht wird, solte sie nicht genutzt werden
