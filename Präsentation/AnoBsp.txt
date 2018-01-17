@@ -1,4 +1,4 @@
 Anonyme Klasse werden genutzt, wenn man eine modifizierte "Einweg"-Instanz einer beliebigen Klasse braucht
 Spart das Deklarieren einer Klasse und verhindert mögliche Fehler durch überschriebene Funktionen
 Wenn die Modifikationen an Mehreren Stellen in der Methode gebraucht wird -> Lokale Klasse nutzen
-Wenn sie in verschiedenen Methoden oder Klasse gebraucht werden kann -> Innere oder "Normale" Klasse
+Wenn sie in verschiedenen Methoden oder Klasse gebraucht werden kann -> Innere oder "Normale" Klasse nutzen

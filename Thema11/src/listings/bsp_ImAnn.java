@@ -23,7 +23,7 @@ public class Main{
         };
         //Da printVariables auch innerhalb der Oberklasse existiert,
         //kann sie von der Instanz a aufgerufen werden
-        a.printVariables();s
+        a.printVariables();
         //Ausgabe:"10 20" \n "20"
     }
 }
