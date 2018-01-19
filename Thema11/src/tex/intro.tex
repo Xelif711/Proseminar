@@ -3,10 +3,14 @@
 
 Innere bzw. Eingebettete Klassen wurden in Java 1.1 eingeführt. \cite{Oracle:JDK_Doku1.1.4}
 Sie wurden Hauptsächlich eingeführt, da die Java-Designer erkannt hatten, dass die Sprache eine Art "'Funktionszeiger"' benötigt, welcher jedoch mit der Sprachkonstruktion von Java nicht zu realisieren ist.
-Diese notwendigkeit kam Haupsächlich von der Existens von Funktionszeigern in anderen Programmiersprachen, wie z.B. C oder Lisp.
-Die Möglichkeit, Innere Klassen verschiedenster Art zu benutzen, macht es für die Programmiere einfacher Callbacks und Iteratoren als Adapterklassen zu implemtieren, was vorher umständlich und mit relativ viel aufwand verbunden war.
+Diese Notwendigkeit kam Haupsächlich von der Existens von Funktionszeigern in anderen Programmiersprachen, wie z.B. C oder Lisp.
+
+Ein weitere Faktor war die Existenz von Inneren Klassen in C++, welche 1989 eingeführt wurden, und semantisch Äquivalent zu Javas Statischen Inneren Klassen waren.
+In C++11 wurden die Inneren Klassen in C++ dann um die Möglichkeiten einer "'Normalen"' Inneren Klasse Javas erweitert (\cite{Ellis2007}).
+
+Die Möglichkeit, Innere Klassen verschiedenster Art zu benutzen, macht es für die Programmiere einfacher Callbacks und Iteratoren als Adapterklassen zu implemtieren, was vorher umständlich und mit relativ viel Aufwand verbunden war.
 Es gibt insgesamt vier verschiedene Arten von Eingebetteten Klassen, die Inneren Klassen, die Statischen Inneren Klassen, die Lokalen Klassen und die Anonymen Klassen, welche sich jeweils Leicht in der Implementierung, in der Datenkapselung und in den Möglichen Funktionalitäten unterscheiden.
 Speziell sind Innere- und Statische Innere Klassen nicht sehr unterschiedlich, unterscheiden sich jedoch zusammen relativ stark von den Lokalen Klassen.
-Die Anonymen Klassen sind eine Allgemeine Unterart der Inneren / Lokalen Klassen, wobei sie sich besonders in der Implementierung von den anderen Eingebetteten Klassen unterscheidet.
+Die Anonymen Klassen sind eine Allgemeine Unterart der Inneren Klassen, wobei sie sich besonders in der Implementierung von den anderen Eingebetteten Klassen unterscheidet.
 
 \newpage

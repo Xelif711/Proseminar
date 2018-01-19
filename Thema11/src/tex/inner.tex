@@ -28,7 +28,8 @@ In diesem Fall darf einfach der Konstruktor der statischen inneren Klasse über 
 In beiden Fällen werden die Objektdeklarationen über den Namensraum der äußeren Klasse geregelt (Listing \ref{lst:InstInn}) \cite{goll2013java}.
 
 Dies Erklärt sich durch Speicherung des Bytecodes der Inneren Klassen, welcher nach der Kompilierung als .class Datei im gleichen Ordner wie die Äußere Klasse abgelegt und mit {\it ÄußereKlasse\$InnereKlasse}.class bezeichnet wird, und nicht in der gleichen Datei gespeichert wird.
-
+\\
+\\
 \begin{figure}[hbt]
 \lstset{language=Java}
 \lstinputlisting[
@@ -45,7 +46,8 @@ Auch muss stets der Namensraum der äußeren Klasse benutzt werden, sollte auf A
 Weiterhin hat die innere Klasse im Normalfall Zugang zu allen Methoden und Variablen der äußeren Klasse - sogar zu denen, die als private deklariert wurden.
 Dies gilt andersherum ebenso: Auch die äußere Klasse kann auf die komplette innere Klasse zugreifen, gleich ob diese privat ist oder nicht.
 Eine große Unterscheidung muss jedoch gemacht werden wenn eine innere Klasse statisch ist. Da in diesem Fall keine Instanz der äußeren Klasse verbunden ist, können auch lediglich statische Attribute der äußeren Klasse benutzt werden (Listing \ref{lst:SZInn}).
-
+\\
+\\
 \begin{figure}[hbt]
 \lstset{language=Java}
 \lstinputlisting[
@@ -53,6 +55,7 @@ label=lst:SZInn,
 caption=Sichtbarkeitsbeispiel für Innere Klassen in Java] {src/listings/bsp_SZ_Inn.java}
 \end{figure}
 
+\newpage
 
 \subsection{Vorteile und Nutzen}
 
@@ -66,7 +69,8 @@ Dadurch entsteht jedoch die Möglichkeit, dass durch die mögliche Sichtbarkeit 
 Im Beispiel \ref{lst:ZclInn}  wird die Zyklische Vererbung nicht erkannt, da die Klasse {\it innerA} die Klasse {\it A} nicht extended und somit nicht direkt von ihr erbt, und somit der Java-Compiler die Tatsache, dass {\it innerA} durch {\it A} von {\it B} erbt, nicht erkennt und den Code somit ohne Fehler kompiliert.
 Dies kann, wenn es nicht bemerkt wird, zu falschem, und aus der Sicht der Entwickler, sonderbarem Verhalten führen, obwohl die Implementierung semantisch korrekt ist.
 Um die Möglichkeit zu verringern, dass eine Zyklische Vererbung auftreten kann, wurde das Sogenannte PICIP (Eine Kurzform für "'Potential Inner Class Inheritance Problem"') enwickelt, welche das Potential beschreibt, dass Vererbungsprobleme bei Inneren Klassen aufteten könnte.
-
+\\
+\\
 \begin{figure}[hbt]
 \lstset{language=Java}
 \lstinputlisting[
@@ -81,7 +85,7 @@ Dies erleichtert die Implementierung einer Adapterklasse, welche genau an der St
 Man kann durch die Deklaration einer benötigten Klasse als Innere Klasse an der entsprechenden Stelle die Lesbarkeit/Übersichtlichkeit des Codes erhöhen.
 Dadurch ist es jedoch Möglich, dass der Code durch zu viele bzw. zu tief ineinander verschachtelte Innere Klassen unübersichlich und somit unangenehm zu Lesen wird. Allgemein gilt dazu, dass so wenig Klassen wie möglich ineinander geschachtelt werden sollten, um besonders die Fehlererkennung zu verbessern.
 
-Außerdem werden Namenskonflikte mit anderen Klassen im Paket vermieden, da man mehrere Klassen mit gleichem Namen haben kann, die (Statische) Innere Klasse jedoch über Ihre Äußere Klasse Instanziiert werden muss und es somit nicht zu Verwechslungen und Konflikten mit gleichnamigen Klassen im Paket kommen kann.
+Außerdem werden Namenskonflikte mit anderen Klassen im Paket vermieden, da man mehrere Klassen mit gleichem Namen haben kann, die (Statischen) Inneren Klassen jedoch über Ihre Äußere Klasse Instanziiert werden müssen und es somit nicht zu Verwechslungen und Konflikten mit gleichnamigen Klassen im Paket kommen kann.
 
 \subsection{Anwendungen / Best Practices}
 

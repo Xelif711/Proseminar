@@ -1,5 +1,3 @@
-//Listing 2.1: Generelle Implementierung
-
 class OuterClass{
 
     int b;

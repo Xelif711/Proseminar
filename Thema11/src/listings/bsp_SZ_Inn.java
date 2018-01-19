@@ -1,5 +1,3 @@
-//Listing 2.3: Sichtbarkeit & Zugriff
-
 public class OuterClass{
 
     private int a;

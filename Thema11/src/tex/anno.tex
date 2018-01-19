@@ -3,8 +3,6 @@
 
 {\Large \bf Anonyme Klassen}
 
-{\bf Implementierung und Instanziierung}
-
 Eine anonyme Klasse wird in Java nach Konstruktoraufruf einer beliebigen Klasse / Interfaces definiert (Listing \ref{lst:ImAnn}).
 Dazu wird nach dem Aufruf ein Codeblock mit geschweiften Klammern geöffnet, in dem die instanziierte Klasse beliebig um Methoden und Datenfelder erweitert werden kann, welche nicht statisch sein dürfen.
 Da die Anonyme Klasse von der eigentlich instaziierten Klasse erbt und somit eine Unterklasse dieser ist, können dabei auch Methoden überschrieben werden.
@@ -23,7 +21,7 @@ caption=Beispielimplementierung und -instanziierung einer Anonymen Klasse in Jav
 {\bf Sichtbarkeit \& Zugriff}
 
 Es liegt in der Natur der Anonymen Klassen, dass auf sie lediglich über die mit ihr verbundenen Instanz zugegriffen werden kann.
-Weiterhin kann die anonyme Klasse auch nur mit ihren eigenen Attributen arbeiten bzw. denen der Oberklasse.
+Weiterhin kann die anonyme Klasse auch nur mit ihren eigenen Attributen bzw. denen der Oberklasse arbeiten.
 
 \newpage
 
@@ -95,8 +93,8 @@ Dabei wird die Ereignisbehandlung eine innere Klasse des GUI, die ihrerseits ein
 So lässt sich der Code prägnant an der Stelle formulieren, wo er gebraucht wird.
 Währenddessen sind die betroffenen Klassen sonst komplett unsichtbar.
 Doch hier können auch die anonymen Klassen genutzt werden, denn momentan agiert nur eine Instanz des EventHandlers, die je nach Button einen Unterschied macht. Es kann jedoch deutlich eleganter sein, mehrere "'Einweginstanzen"' zu haben, die dann nur auf einen Button reagieren und dementsprechend nur eine Methode überschreiben müssen.
-Dadurch fällt der Overhead durch if-Cases weg und man kann noch klarer sehen, was das Drücken eines bestimmten Buttons auslösen soll (Listing \ref{lst:AnwAnnB}).
-
+Dadurch fällt der Overhead durch if-Cases weg und man kann noch klarer sehen, was durch das Drücken eines bestimmten Buttons ausgelöst werden soll (Listing \ref{lst:AnwAnnB}).
+\\
 \begin{figure}[H]
 \lstset{language=Java}
 \lstinputlisting[
@@ -111,7 +109,7 @@ In diesem Beispiel soll das Essen eines Kuchens modelliert werden.
  Dabei gibt es die Klasse Kuchen. Der Kuchen kann je nach seinem Geschmack Feedback bekommen.
 Dieses Feedback kommt von verschiedenen Menschen, die unterschiedliche Geschmäcker haben.
 Da die Kuchentester jedoch nur in dieser Methode gebraucht werden, implementieren wir sie auch nur in einer lokalen Klasse in getFeedback.
-
+\\
 \begin{figure}[H]
 \lstset{language=Java}
 \lstinputlisting[

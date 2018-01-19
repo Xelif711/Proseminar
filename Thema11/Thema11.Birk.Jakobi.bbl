@@ -1,5 +1,10 @@
 \begin{thebibliography}{www17}
 
+\bibitem[EA07]{Ellis2007}
+Ellis Ellis and Ellis~Margaret A.
+\newblock {\em The Annotated C++ Reference Manual -}.
+\newblock Pearson Education, Amsterdam, 2007.
+
 \bibitem[GH13]{goll2013java}
 J.~Goll and C.~Heinisch.
 \newblock {\em Java als erste Programmiersprache: Ein professioneller Einstieg
