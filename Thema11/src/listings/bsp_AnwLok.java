@@ -1,42 +1,49 @@
 import java.util.Random;
 
-public class Kuchen{
-    private Geschmack g;
-    public Kuchen(Geschmack g){
-        this.g = g;
+public class Student{
+    private Schwierigkeit vorbereitung;
+    public Student(Schwierigkeit v){
+        this.vorbereitung = v;
     }
-    void getFeedback(){
-        class Mensch{
-            Geschmack g;
-            public Mensch(){
+    void klausurenSchreiben(int anzahl){
+        class Klausur{
+            Schwierigkeit s;
+            public Klausur(){
                 Random rand = new Random();
                 int r = rand.nextInt(3);
-                if(r == 0){
-                    this.g = Geschmack.Kuchen;
-                }else if(r == 1){
-                    this.g = Geschmack.Apfel;
-                }else{
-                    this.g = Geschmack.Schokoladen;
+                switch(r){
+                    case 0: this.s = Schwierigkeit.LEICHT;
+                            break;
+                    case 1: this.s = Schwierigkeit.MITTEL;
+                            break;
+                    case 2: this.s = Schwierigkeit.SCHWER;
+                            break;
                 }
             }
-            void kuchenEssen(Kuchen k){
-                if(k.g == g || g == Geschmack.Kuchen){
-                    System.out.println("Mhm, dieser Kuchen mit " + k.g.toString() + "geschmack schmeckt aber gut.");
+            void klausurSchreiben(){
+                if(vorbereitung == Schwierigkeit.SCHWER){
+                    System.out.println("Ich habe bestanden, da meine Vorbereitung gut war.");
+                }else if(vorbereitung == Schwierigkeit.MITTEL){
+                    if(s != Schwierigkeit.SCHWER){
+                        System.out.println("Ich habe bestanden, weil die Klausur nicht allzu schwer war.");
+                    }else{
+                        System.out.println("Die Klausur war viel zu schwer.");
+                    }
                 }else{
-                    System.out.println("Ich mag keine Kuchen mit " + k.g.toString() + "geschmack.");
+                    if(s == Schwierigkeit.LEICHT){
+                        System.out.println("Zum Glueck war die Klausur leicht.");
+                    }else{
+                        System.out.println("Ich habe mich nicht genug vorbereitet.");
+                    }
                 }
             }
         }
-        Mensch m1 = new Mensch();
-        Mensch m2 = new Mensch();
-        Mensch m3 = new Mensch();
-        Mensch m4 = new Mensch();
-        m1.kuchenEssen(this);
-        m2.kuchenEssen(this);
-        m3.kuchenEssen(this);
-        m4.kuchenEssen(this);
+        for(int i = 0; i < anzahl; i++){
+            Klausur klausur = new Klausur();
+            klausur.klausurSchreiben();
+        }
     }
 }
-enum Geschmack{
-    Kuchen, Apfel, Schokoladen
+enum Schwierigkeit{
+    LEICHT, MITTEL, SCHWER
 }

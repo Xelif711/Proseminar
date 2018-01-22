@@ -38,6 +38,7 @@ escapechar=|,
 caption=Beispielinstanziierung von inneren Klassen in Java] {src/listings/bsp_InstInn.java}
 \end{figure}
 
+\newpage
 
 {\bf Sichtbarkeit \& Zugriff}
 
@@ -80,18 +81,24 @@ caption=Von Java nicht erkannte Zyklische Vererbung] {src/listings/bsp_Zcl_A.jav
 \end{figure}
 \newpage
 
-Dies erleichtert die Implementierung einer Adapterklasse, welche genau an der Stelle mit den entsprechenden Methoden einer Externen Klasse deklariert werden kann, an welcher sie gebraucht wird, und man nicht notwendigerweise Umwege über Interfaces gehen muss, um die Entsprechende Beziehungen zwischen den Klassen zu bekommen.
+Dies erleichtert die Implementierung einer Adapterklasse, welche genau an der Stelle mit den entsprechenden Methoden einer Externen Klasse deklariert werden kann,
+ an welcher sie gebraucht wird, und man nicht notwendigerweise Umwege über Interfaces gehen muss, um die Entsprechende Beziehungen zwischen den Klassen zu bekommen.
 
 Man kann durch die Deklaration einer benötigten Klasse als Innere Klasse an der entsprechenden Stelle die Lesbarkeit/Übersichtlichkeit des Codes erhöhen.
-Dadurch ist es jedoch Möglich, dass der Code durch zu viele bzw. zu tief ineinander verschachtelte Innere Klassen unübersichlich und somit unangenehm zu Lesen wird. Allgemein gilt dazu, dass so wenig Klassen wie möglich ineinander geschachtelt werden sollten, um besonders die Fehlererkennung zu verbessern.
+Dadurch ist es jedoch Möglich, dass der Code durch zu viele bzw. zu tief ineinander verschachtelte Innere Klassen unübersichlich und somit unangenehm zu Lesen wird.
+Allgemein gilt dazu, dass so wenig Klassen wie möglich ineinander geschachtelt werden sollten, um besonders die Fehlererkennung zu verbessern.
 
-Außerdem werden Namenskonflikte mit anderen Klassen im Paket vermieden, da man mehrere Klassen mit gleichem Namen haben kann, die (Statischen) Inneren Klassen jedoch über Ihre Äußere Klasse Instanziiert werden müssen und es somit nicht zu Verwechslungen und Konflikten mit gleichnamigen Klassen im Paket kommen kann.
+Außerdem werden Namenskonflikte mit anderen Klassen im Paket vermieden, da man mehrere Klassen mit gleichem Namen haben kann,
+ die (Statischen) Inneren Klassen jedoch über Ihre Äußere Klasse Instanziiert werden müssen und es somit nicht zu Verwechslungen und Konflikten mit gleichnamigen Klassen im Paket kommen kann.
 
 \subsection{Anwendungen / Best Practices}
 
-Innere Klassen sollten hauptsächlich dann verwendet werden, wenn eine Klasse ausschließlich von einer weiteren benutzt wird.
+Innere Klassen sollten hauptsächlich dann verwendet werden, wenn eine Klasse ausschließlich von der Oberklasse benutzt wird.
+Ein weiterer Anwendungsfall wäre das Benötigen der Eigenschaften der Mehrfachvererbung oder der Möglichkeit des Zugriffs von Neuen Methoden auf Private Atribute der Äußeren Klasse.
 
-Beispiel \ref{lst:AnwInn}: Der Ladeadapter
+\newpage
+
+{\bf Beispiel \ref{lst:AnwInn}: Der Ladeadapter}
 
 In diesem simplen Beispiel geht es darum, einen Adapter für den Ladevorgang eines Handys der Art Samsong zu bauen.
 Wir benötigen für den Ladevorgang ein Objekt, welches das Interface {\it Ladegeraet} implementiert.
@@ -100,9 +107,8 @@ Da jedoch auch dieses im Prinzip laden kann, versuchen wir, diese Funktionalitä
 Dies können wir durch die Einbindung der innere Klasse Adapter erreichen, welche das Interface implementiert.
 Jedoch steht uns hier auch das Ladegeraet des EiPhones zur Verfuegung.
 Dieses instanziieren wir und überschreiben die Methode des Interfaces dadurch, dass wir hier die Lademethode des EiPhones benutzen.
-Damit koennen wir eine Instanz des Adapters als Ladegeraet für unser Handy benutzen, obwohl uns kein korrektes Ladegeraet zur Verfügung stand.
-
-\newpage
+Damit können wir eine Instanz des Adapters als Ladegeraet für unser Handy benutzen, obwohl uns kein korrektes Ladegeraet zur Verfügung stand.
+\\
 \begin{figure}[hb]
 \lstset{language=Java}
 \lstinputlisting[

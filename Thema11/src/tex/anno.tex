@@ -103,14 +103,17 @@ escapechar=|,
 caption=Mögliche GUI-Implementierung mit Anonymen statt Inneren Klassen] {src/listings/bsp_AnwAnnB.java}
 \end{figure}
 \newpage
-{\bf Beispiel für lokale Klassen: Kuchenverkostung}
+{\bf Beispiel \ref{lst:AnwLok}: Anwendung von lokale Klassen: Studenten und Klausuren}
 
-In diesem Beispiel soll das Essen eines Kuchens modelliert werden.
- Dabei gibt es die Klasse Kuchen. Der Kuchen kann je nach seinem Geschmack Feedback bekommen.
-Dieses Feedback kommt von verschiedenen Menschen, die unterschiedliche Geschmäcker haben.
-Da die Kuchentester jedoch nur in dieser Methode gebraucht werden, implementieren wir sie auch nur in einer lokalen Klasse in getFeedback.
+In diesem Beispiel geht es um die Klasse {\it Student}.
+Ein Student kann eine gewisse Anzahl an Klausuren schreiben, aber sonst beschäftigt er sich nicht damit.
+Je nachdem, wie gut er sich vorbereitet hat, kann er die Klausur Bestehen oder Durchfallen.
+Jedoch richtet sich das Bestehen zusätzlich noch nach dem Schwierigkeitsgrad der Klausur.
+Bei guter Vorbereitung besteht der Student immer, sonst nur wenn die  Schwierigkeit der Klausur mindestens dem Vorbereitungsgrad entspricht.
+Hier können wir passend eine lokale Klasse benutzen, da die KLasse {\it Klausur} sonst nirgendwo genutzt würde, während die Methode {\it klausurenSchreiben} diese mehrmals instanziieren und benutzen muss.
+Weiterhin kann so problemlos auf das private Attribut Schwierigkeit zugegriffen werden.
 \\
-\begin{figure}[H]
+\begin{figure}[ht]
 \lstset{language=Java}
 \lstinputlisting[
 label=lst:AnwLok,
