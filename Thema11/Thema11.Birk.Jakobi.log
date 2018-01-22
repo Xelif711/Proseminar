@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.27)  19 JAN 2018 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.27)  19 JAN 2018 16:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -949,7 +949,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--119
 
  []
 
-) (./src/tex/conclusion.tex [15] [16
+) (./src/tex/use.tex) (./src/tex/conclusion.tex [15] [16
 
 ]
 Kapitel 3.
@@ -970,8 +970,8 @@ s://docs.oracle.com/javase/specs/\OT1/cmr/m/n/10.95 ,
 
 ) [19] (./Thema11.Birk.Jakobi.aux) ) 
 Here is how much of TeX's memory you used:
- 15156 strings out of 494893
- 284350 string characters out of 6178671
+ 15159 strings out of 494893
+ 284385 string characters out of 6178671
  521939 words of memory out of 5000000
  18104 multiletter control sequences out of 15000+600000
  19362 words of font info for 51 fonts, out of 8000000 for 9000
