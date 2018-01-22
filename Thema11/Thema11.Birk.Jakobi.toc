@@ -10,5 +10,5 @@
 \contentsline {subsection}{\numberline {2.2.2}Vorteile / Nutzen}{12}
 \contentsline {subsection}{\numberline {2.2.3}Anwendung / Best Practices}{13}
 \contentsline {section}{\numberline {2.3}Weiteres}{15}
-\contentsline {chapter}{\numberline {3}Zusammenfassung und Ausblick}{17}
+\contentsline {chapter}{\numberline {3}Zusammenfassung und Fazit}{17}
 \contentsline {chapter}{Literaturverzeichnis}{18}

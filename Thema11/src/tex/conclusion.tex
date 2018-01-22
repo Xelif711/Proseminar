@@ -1,10 +1,20 @@
-\chapter{Zusammenfassung und Ausblick}
+\chapter{Zusammenfassung und Fazit}
 
-Im Algemeinen kann man zusammenfassend sagen, dass Lokale Klassen eher weniger gebraucht werden, Anonyme Klassen aufgrund derer Spezifität häufiger und an verschiedenen Stellen, und Innere Klassen sind in bestimmten Anwendungsbereichen wie GUIs fast Standard, aber sonst auch nicht so vielsetig einsetzbar.
-Insgesamt werden aber alle Konstrukte in ähnlichen Anwendungsbereichen eingesetzt, und unterscheiden sich somit maximal in der Größenordnungen des Einsatzes.
-Weiterhin sind die Konzepte aus Gründen der Sichtbarkeit und Ästhetik relevant, in wenigen Fällen ist tatsächlich die Codeefizienz höher, ausgenommen sind in diesem Fall die Anonymen Klassen.
-Dies kann man auch an der Tatsache erkenne, dass für die Implementierung der eingebetteten Klassen die JVM nicht verändert werden musste, da sich die Eingebetteten Klassen sich soweit nur in der Implemtierung und leicht im Verhalten von den Top-Level Klasse unterscheiden.
+Eingebettete Klassen in Java kann man grob in 4 Arten charakterisieren.
+Dabei sind die statischen inneren Klassen das selbstständigste Konzept, sie verbindet hauptsächlich der Namensraum mit einer anderen Klassen, verhalten sich aber sonst wie eine ganz normale Klasse.
+Eine innere Klasse ist an eine Instanz einer äußeren Klasse gebunden und kann folglich mehr Attribute benutzen.
+Beide werden vor allem dann benutzt, wenn eine Klasse nur von einer anderen benutzt wird und dementsprechend semantisch verbunden ist.
+Eine ähnliche Motivation gibt es für lokale Klassen. Auch hier ist es wichtig, dass eine Klasse nur an einer Stelle benutzt wird.
+Diese befindet sich im Gegensatz zu den inneren Klassen jedoch innerhalb einer Methode, und ist damit nur dort benutzbar.
+Einen sehr präzisen Einsatz erlaubt das Benutzen von anonymen Klassen, welche das Modifizieren einer Klasse für genau eine Instanz bei Konstruktoraufruf ermöglichen.
 
+Diese Konzepte sind so, wie sie in Java funktionieren, weitergehend als ähnliche Strukturen in anderen Sprachen, da sie teilweise mächtiger sind und mehr Zugriffsrechte besitzen.
+In der Grundidee sind sie trotzdem ähnlich, geht es doch meist darum, Datenkapselung zu verbessern.
+
+Insgesamt haben die verschiedenen Arten eingebetteter Klassen einige weitere Vorteile, welche in jeweils unterschiedlichen Einsatzbereichen resultieren.
+Dabei sind vor allem die anonymen Klassen durch Vielseitigkeit und Codeeffizienz interessant.
+Dennoch muss auch hier betont werden, dass eingebettete Klassen in Java oftmals zwar eine sinnvolle Alternative sind, jedoch auch meistens vermieden werden können.
+Dies zeigt sich auch darin, dass die Java Virtual Machine bei Einführung der eingebetteten Klassen nicht verändert werden musste, da Java auch aus eingebetteten Klassen nach Kompilation normale Klassen macht.
 % Bild einbinden
 %\begin{figure}[ht!]
 %\begin{center}\includegraphics[width=5cm]{src/pic/logo}\end{center}

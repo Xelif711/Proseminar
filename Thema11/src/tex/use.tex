@@ -1,12 +1,18 @@
 \section{Weiteres}
 
-Das Konzept der Inneren Klassen wurde erstmals 1989 in C++ eingeführt. Diese waren semantisch Äquivalent zu Javas Statischen Inneren Klassen.
-In C++11 wurden die Inneren Klassen in C++ dann um die Möglichkeiten einer "'Normalen"' Inneren Klasse Javas erweitert (\cite{Ellis2007}).
+Das Konzept der Inneren Klassen wurde erstmals 1989 in C++ eingeführt.
+Diese waren sehr ähnlich zu Javas Statischen Inneren Klassen, wobei der größte Unterschied in der Möglichkeit Javas besteht, auf Private, für andere Klassen nicht einsehbare Attribute zuzugreifen, was in C++ nicht möglich ist.
+So kann man sagen, dass Javas Innere Klassen eine Erweiterung der Inneren Klassen von C++ sind.
+In C++11 wurden die Inneren Klassen in C++ dann um die Möglichkeiten einer "'Normalen"' Inneren Klasse Javas, der Möglichkeit auch auf nicht-Statische Attribute der Äußeren Klasse zugreifen zu können, erweitert (\cite{Ellis2007}).
+
 Selbiges Konzept existiert auch in C\# und Visual Basic, welche beides Weiterentwicklugen Microsofts von C++ sind,
- und somit den Gleichen Regeln folgen wie die Inneren Klassen in C++.
+ und somit auch fast den Gleichen Regeln folgen wie die Inneren Klassen in C++.
+In C\# existiert nämlich zusätzlich die Möglichkeit auf als {\it protected} oder {\it privat} deklarierte Attribute zuzugreifen.
 
 In der Sprache D, welche 1999 als Weiterentwicklung von C++ entwickelt wurde, existiert das gleiche Konzept der Inneren Klassen.
+Es besteht bei als Statisch markierten Inneren Klassen nur die Möglichkeit auf als Statisch deklarierte Attribute der Äußeren Klasse zuzugreifen.
+Jedoch wird nicht unterschieden, ob die Klasse innerhalb einer Methode oder Klasse deklariert wurde.
 
-Das Konzept des definieren von Klassen innerhalb anderer Klassen existiert auch in Ruby und Phyton,
+Das Konzept des definieren von Klassen innerhalb anderer Klassen existiert auch in Ruby und Python,
  jedoch unterscheiden sich die eingebetteten Klassen in de Sprache maximal durch den Namensraum,
  über den Sie Angesprochen werden können, von "'Normalen"' Klassen der Sprachen.
