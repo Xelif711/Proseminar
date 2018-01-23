@@ -27,7 +27,10 @@ Im Gegensatz dazu benötigt eine statische innere Klasse keine Instanz der äuß
 In diesem Fall darf einfach der Konstruktor der statischen inneren Klasse über den Namensraum der Äußeren Klasse aufgerufen werden.
 In beiden Fällen werden die Objektdeklarationen über den Namensraum der äußeren Klasse geregelt (Listing \ref{lst:InstInn}) \cite{goll2013java}.
 
-Dies Erklärt sich durch Speicherung des Bytecodes der Inneren Klassen, welcher nach der Kompilierung als .class Datei im gleichen Ordner wie die Äußere Klasse abgelegt und mit {\it ÄußereKlasse\$InnereKlasse}.class bezeichnet wird, und nicht in der gleichen Datei gespeichert wird.
+Dies erklärt sich durch Speicherung des Bytecodes der inneren Klassen, welche nach
+der Kompilierung als .class Datei im gleichen Ordner wie die äußere Klasse abgelegt
+wird. Jedoch wird sie mit {\it ÄußereKlasse\$InnereKlasse.class} bezeichnet, und nicht in der gleichen Datei
+gespeichert wie die äußere Klasse.
 
 \begin{figure}[hbt]
 \lstset{language=Java}
@@ -39,7 +42,7 @@ caption=Beispielinstanziierung von inneren Klassen in Java] {src/listings/bsp_In
 
 {\bf Sichtbarkeit \& Zugriff}
 
-Generell gilt, dass die innere (statische) Klasse je nach Modifier genau wie ein Attribut der äußeren Klasse gesehen wird, was dann implizit auch für alle Attribute der inneren Klasse gilt, falls diese einer weniger starken Modifier benutzen.
+Generell gilt, dass die innere (statische) Klasse je nach Modifikator genau wie ein Attribut der äußeren Klasse gesehen wird, was dann implizit auch für alle Attribute der inneren Klasse gilt, falls diese einer weniger starken Modifikator benutzen.
 Auch muss stets der Namensraum der äußeren Klasse benutzt werden, sollte auf Attribute der inneren Klasse zugegriffen werden.
 Weiterhin hat die innere Klasse im Normalfall Zugang zu allen Methoden und Variablen der äußeren Klasse - sogar zu denen, die als private deklariert wurden.
 Dies gilt andersherum ebenso: Auch die äußere Klasse kann auf die komplette innere Klasse zugreifen, gleich ob diese privat ist oder nicht.
@@ -50,7 +53,7 @@ Eine große Unterscheidung muss jedoch gemacht werden wenn eine innere Klasse st
 \lstset{language=Java}
 \lstinputlisting[
 label=lst:SZInn,
-caption=Sichtbarkeitsbeispiel für Innere Klassen in Java] {src/listings/bsp_SZ_Inn.java}
+caption=Sichtbarkeitsbeispiel für innere Klassen in Java] {src/listings/bsp_SZ_Inn.java}
 \end{figure}
 
 \subsection{Vorteile und Nutzen}
@@ -61,7 +64,7 @@ Dies ist insbesonders ein Vorteil für die Datenkapselung, da man innerhalb der 
 Ein Grund dafür ist die Möglichkeit, dass eine innere Klasse, welche implizit die Methoden und Variablen der äußeren Klasse erbt, eine weitere Oberklasse erweitern kann und somit auch deren Variablen und Methoden erbt.
 Außerdem können Klassen, welche von der inneren Klasse erben (was möglich ist, wenn diese nicht als private, protected oder final markiert sind) über die innere Klasse auf die Attribute und Methoden der äußeren Klasse zugreifen, ohne dass diese direkt von ihr erbt. Dies kann jedoch auch zu Problemen führen.
 
-Es entsteht dadurch die Möglichkeit, dass es durch die Sichtbarkeit der inneren Klasse nach außen zyklischen Vererbungen kommt. Dies bedeutet, dass eine Klasse (indirekt) von sich selbst erbt und somit die eventuell eigene Methoden überschreibt (\cite{DBLP:journals/corr/abs-1301-6260}) (Listing \ref{lst:ZclInn}).
+Es entsteht dadurch die Möglichkeit, dass es durch die Sichtbarkeit der inneren Klasse nach außen zu zyklischen Vererbungen kommt. Dies bedeutet, dass eine Klasse (indirekt) von sich selbst erbt und somit eventuell eigene Methoden überschreibt (\cite{DBLP:journals/corr/abs-1301-6260}) (Listing \ref{lst:ZclInn}).
 Im Beispiel \ref{lst:ZclInn}  wird die zyklische Vererbung nicht erkannt, da die Klasse {\it innerA} die Klasse {\it A} nicht erweitert und somit nicht direkt von ihr erbt. Damit kann der Java-Compiler die Tatsache, dass {\it innerA} durch {\it A} von {\it B} erbt, nicht erkennen, und der Code wird fehlerlos kompliiert.
 Dies kann, wenn es nicht bemerkt wird, zu falschem, und aus der Sicht der Entwickler, sonderbarem Verhalten führen, obwohl die Implementierung semantisch korrekt ist.
 Um die Möglichkeit zu verringern, dass eine zyklische Vererbung auftreten kann, wurde das sogenannte PICIP (Eine Kurzform für "'Potential Inner Class Inheritance Problem"') enwickelt, welches das Potential beschreibt, mit dem Vererbungsprobleme bei inneren Klassen auftreten könnten.
@@ -105,7 +108,7 @@ Damit können wir eine Instanz des Adapters als Ladegeraet für unser Handy benu
 \lstinputlisting[
 label=lst:AnwInn,
 escapechar=|,
-caption=Beispielanwendug von Inneren Klassen in einem Adapter] {src/listings/bsp_AnwInn.java}
+caption=Beispielanwendung von inneren Klassen in einem Adapter] {src/listings/bsp_AnwInn.java}
 \end{figure}
 
 

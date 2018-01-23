@@ -13,7 +13,7 @@ Die lokale Klasse darf jedoch von einer anderen Klasse erben und nicht-statische
 \lstinputlisting[
 label=lst:ImLok,
 escapechar=|,
-caption=Beispielimplementierung einer Lokalen Klasse in Java] {src/listings/bsp_ImLok.java}
+caption=Beispielimplementierung einer lokalen Klasse in Java] {src/listings/bsp_ImLok.java}
 \end{figure}
 \newpage
 
@@ -31,7 +31,7 @@ Falls die lokale Klasse erbt, verdecken gleichnamige Attribute der Oberklasse di
 Die lokale Klasse kann nur im Bereich ihrer Methode eingesetzt werden und nicht als Oberklasse dienen.
 Lokale Klassen sollten nur benutzt werden, wenn die neu implementierten Methoden nur in der entsprechenden Methode gebraucht werden.
 Wenn diese Funktionen jedoch möglicherweise in mehreren Methoden der äußeren Klasse benötigt werden, sollte jedoch eine innere Klasse bzw. "'normale"' Klasse benutzt werden.
-
+Die Vorteile einer lokalen Klasse sind weitestgehend identisch zu denen der inneren Klassen. Lediglich spezielle Strukturen, wie die Implementierung von Adapterklassen, sind nicht mit lokalen Klassen zu machen.
 
 \subsection{Anwendung / Best Practices}
 

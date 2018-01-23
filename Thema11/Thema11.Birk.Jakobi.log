@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.27)  23 JAN 2018 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.27)  23 JAN 2018 19:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -921,12 +921,12 @@ LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 4.
 ) [3] (./src/listings/bsp_InstInn.java)
 (./src/listings/bsp_SZ_Inn.java)
-Underfull \hbox (badness 10000) in paragraph at lines 42--55
+Underfull \hbox (badness 10000) in paragraph at lines 45--58
 
  []
 
 [4] (./src/listings/bsp_Zcl_A.java)
-Underfull \hbox (badness 10000) in paragraph at lines 64--77
+Underfull \hbox (badness 10000) in paragraph at lines 67--80
 
  []
 
@@ -941,12 +941,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10])
 (./src/tex/anno.tex (./src/listings/bsp_ImAnn.java) [11]
-Underfull \hbox (badness 10000) in paragraph at lines 40--54
+Underfull \hbox (badness 10000) in paragraph at lines 37--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--54
+Underfull \hbox (badness 10000) in paragraph at lines 37--51
 
  []
 
@@ -957,9 +957,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--54
 Kapitel 3.
 [17]) (./src/tex/conclusion.tex [18]
 Kapitel 4.
-[19
+) (./Thema11.Birk.Jakobi.bbl [19
 
-]) (./Thema11.Birk.Jakobi.bbl [20
+] [20
 
 ]
 Overfull \hbox (127.88646pt too wide) in paragraph at lines 20--23
@@ -979,11 +979,7 @@ Overfull \hbox (55.61655pt too wide) in paragraph at lines 33--36
 uide/\OT1/cmr/m/n/10.95 ,
  []
 
-) [21] (./Thema11.Birk.Jakobi.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) [21] (./Thema11.Birk.Jakobi.aux) ) 
 Here is how much of TeX's memory you used:
  15165 strings out of 494893
  284473 string characters out of 6178671
@@ -992,18 +988,18 @@ Here is how much of TeX's memory you used:
  19362 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,6n,54p,425b,1348s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/uc
-rb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Thema11.Birk.Jakobi.pdf (24 pages, 270140 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dv
+ips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/co
+urier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on Thema11.Birk.Jakobi.pdf (24 pages, 270533 bytes).
 PDF statistics:
  133 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
