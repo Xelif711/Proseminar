@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.27)  23 JAN 2018 14:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.27)  23 JAN 2018 14:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -930,40 +930,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--77
 
  []
 
-[5] [6] (./src/listings/bsp_AnwInn.java) [7]) (./src/tex/lok.tex
-(./src/listings/bsp_ImLok.java)
-Underfull \hbox (badness 10000) in paragraph at lines 13--24
+[5] (./src/listings/bsp_AnwInn.java) [6] [7]) (./src/tex/lok.tex
+(./src/listings/bsp_ImLok.java) [8]
+Underfull \hbox (badness 10000) in paragraph at lines 40--48
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--24
-
- []
-
-
+[9] (./src/listings/bsp_AnwLok.java)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
-Underfull \hbox (badness 10000) in paragraph at lines 37--45
-
- []
-
-[9] (./src/listings/bsp_AnwLok.java) [10]) (./src/tex/anno.tex
-(./src/listings/bsp_ImAnn.java)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-[12] (./src/listings/bsp_AnwAnn.java) (./src/listings/bsp_AnwAnnB.java)
-[13]) (./src/tex/use.tex [14] [15] [16] [17] [18
+ [10])
+(./src/tex/anno.tex (./src/listings/bsp_ImAnn.java) [11]
+(./src/listings/bsp_AnwAnn.java) (./src/listings/bsp_AnwAnnB.java)) [12]
+(./src/tex/use.tex [13] [14] [15] [16
 
 ]
 Kapitel 3.
-) [19] (./src/tex/conclusion.tex [20]
+) [17] (./src/tex/conclusion.tex [18]
 Kapitel 4.
-[21
+[19
 
-]) (./Thema11.Birk.Jakobi.bbl [22
+]) (./Thema11.Birk.Jakobi.bbl [20
 
 ]
 Overfull \hbox (247.575pt too wide) in paragraph at lines 20--23
@@ -978,34 +965,30 @@ Overfull \hbox (0.6236pt too wide) in paragraph at lines 25--27
 s://docs.oracle.com/javase/specs/\OT1/cmr/m/n/10.95 ,
  []
 
-) [23] (./Thema11.Birk.Jakobi.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) [21] (./Thema11.Birk.Jakobi.aux) ) 
 Here is how much of TeX's memory you used:
  15163 strings out of 494893
  284443 string characters out of 6178671
- 724960 words of memory out of 5000000
+ 610953 words of memory out of 5000000
  18105 multiletter control sequences out of 15000+600000
  19362 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,6n,54p,425b,1352s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/uc
-rb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Thema11.Birk.Jakobi.pdf (26 pages, 266682 bytes).
+ 55i,6n,54p,425b,1348s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dv
+ips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/co
+urier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on Thema11.Birk.Jakobi.pdf (24 pages, 267396 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 133 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

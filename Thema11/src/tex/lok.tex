@@ -3,31 +3,34 @@
 
 {\bf Implementierung}
 
-Lokale Klassen sind Innere Klassen, welche in Methoden eingebunden werden (Listing \ref{lst:ImLok}).
-Im Gegensatz zu den Inneren Klassen können hier keine zusätzliche Modifiers verwendet werden, da die lokale Klasse nicht das Attribut einer Klasse ist.
+{\it Lokale Klassen} sind innere Klassen, welche in Methoden eingebunden werden (Listing \ref{lst:ImLok}).
+Im Gegensatz zu den inneren Klassen können hier keine zusätzliche Modifikatoren verwendet werden, da die lokale Klasse nicht das Attribut einer Klasse ist.
 Weiterhin darf sie nicht den Namen der umschließenden Klasse haben.
 Die lokale Klasse darf jedoch von einer anderen Klasse erben und nicht-statische Attribute haben.
-
-{\bf Sichtbarkeit und Zugriff}
-
-Die lokale Klasse an sich ist nur innerhalb der Methode sichtbar. Welche Art von Zugang die lokale Klasse zur umschließenden Klasse hat, hängt vom Modifier der einschließenden Methode ab, verläuft aber sonst parallel zu den inneren Klassen.
-Ist die Methode statisch, kann die lokale Klasse somit auch nur auf statische Attribute der umschließenden Klasse zugreifen. Ist die Methode wiederum instanzgebunden, dann hat diese auf alle Attribute der umschließenden Klasse Zugriff.
-Auf Methodenvariablen selbst hat die Klasse keinen Zugriff, außer diese wurden als final deklariert. Falls die lokale Klasse erbt, verdecken gleichnamige Attribute der Oberklasse die der umschließenden Klasse.
 \\
-\\
-\begin{figure}[H]
+\begin{figure}[h]
 \lstset{language=Java}
 \lstinputlisting[
 label=lst:ImLok,
 escapechar=|,
 caption=Beispielimplementierung einer Lokalen Klasse in Java] {src/listings/bsp_ImLok.java}
 \end{figure}
+\newpage
+
+{\bf Sichtbarkeit und Zugriff}
+
+Die lokale Klasse an sich ist nur innerhalb der Methode sichtbar.
+Welche Art von Zugang die lokale Klasse zur umschließenden Klasse hat, hängt vom Zugriffsmodifikator der einschließenden Methode ab, verläuft aber sonst parallel zu den inneren Klassen.
+Ist die Methode statisch, kann die lokale Klasse somit auch nur auf statische Attribute der umschließenden Klasse zugreifen.
+Ist die Methode wiederum instanzgebunden, dann hat diese auf alle Attribute der umschließenden Klasse Zugriff.
+Auf Methodenvariablen selbst hat die Klasse keinen Zugriff, außer diese wurden (effektiv) final deklariert.
+Falls die lokale Klasse erbt, verdecken gleichnamige Attribute der Oberklasse die der umschließenden Klasse.
 
 \subsection{Vorteile / Nutzen}
 
-Die Lokale Klasse kann nur im Bereich ihrer Methode eingesetzt werden und nicht als Oberklasse dienen.
+Die lokale Klasse kann nur im Bereich ihrer Methode eingesetzt werden und nicht als Oberklasse dienen.
 Lokale Klassen sollten nur benutzt werden, wenn die neu implementierten Methoden nur in der entsprechenden Methode gebraucht werden.
-Wenn diese Funktionen jedoch möglicherweise in mehreren Methoden der Äußeren Klasse benötigt werden, sollte jedoch eine Innere Klasse bzw. "'Normale"' Klasse benutzt werden.
+Wenn diese Funktionen jedoch möglicherweise in mehreren Methoden der äußeren Klasse benötigt werden, sollte jedoch eine innere Klasse bzw. "'normale"' Klasse benutzt werden.
 
 
 \subsection{Anwendung / Best Practices}
@@ -42,8 +45,8 @@ Bei guter Vorbereitung besteht der Student immer, sonst nur wenn die  Schwierigk
 Hier können wir passend eine lokale Klasse benutzen, da die KLasse {\it Klausur} sonst nirgendwo genutzt würde, während die Methode {\it klausurenSchreiben} diese mehrmals instanziieren und benutzen muss.
 Weiterhin kann so problemlos auf das private Attribut Schwierigkeit zugegriffen werden.
 \\
-
-\begin{figure}[htb]
+\newpage
+\begin{figure}[H]
 \lstset{language=Java}
 \lstinputlisting[
 label=lst:AnwLok,

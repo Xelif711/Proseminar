@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.27)  18 DEC 2017 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2017.10.27)  23 JAN 2018 14:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,20 +9,20 @@ LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 8 language(s) loaded.
 ./inner.tex:1: Undefined control sequence.
 l.1 \chapter
-            {Hauptteil}
+            {Eingebettete Klassen}
 ? 
 ./inner.tex:1: Emergency stop.
 l.1 \chapter
-            {Hauptteil}
+            {Eingebettete Klassen}
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 5 strings out of 494893
- 126 string characters out of 6178671
- 46119 words of memory out of 5000000
+ 5 strings out of 494894
+ 126 string characters out of 6178697
+ 46116 words of memory out of 5000000
  3416 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 5i,0n,1p,31b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
-./inner.tex:1:  ==> Fatal error occurred, no output PDF file produced!
+ 5i,0n,1p,42b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
