@@ -15,8 +15,8 @@
 \contentsline {subsection}{\numberline {2.3.3}Anwendung / Best Practices}{12}
 \contentsline {chapter}{\numberline {3}Verwandte Konzepte in anderen Sprachen}{17}
 \contentsline {section}{\numberline {3.1}In C++}{17}
-\contentsline {section}{\numberline {3.2}In C\# und Visual Basic}{17}
-\contentsline {section}{\numberline {3.3}In D}{17}
-\contentsline {section}{\numberline {3.4}In Pyton und Ruby}{17}
+\contentsline {section}{\numberline {3.2}In C\#}{17}
+\contentsline {section}{\numberline {3.3}In D}{18}
+\contentsline {section}{\numberline {3.4}In Pyton und Ruby}{18}
 \contentsline {chapter}{\numberline {4}Zusammenfassung und Fazit}{19}
 \contentsline {chapter}{Literaturverzeichnis}{20}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{www17}
+\begin{thebibliography}{www18b}
 
 \bibitem[EA07]{Ellis2007}
 Ellis Ellis and Ellis~Margaret A.
@@ -17,12 +17,21 @@ Sim{-}Hui Tee.
 \newblock {\em CoRR}, abs/1301.6260, 2013.
 
 \bibitem[www97]{Oracle:JDK_Doku1.1.4}
-{JDK 1.1.4 Documentation {\tt
+{JDK 1.1.4 Documentation \\ {\tt
   https://www.cs.princeton.edu/courses/archive/fall97/cs461/jdkdocs/index.html}},
-  december 1997.
+  December 1997.
 
 \bibitem[www17]{Oracle:JLS9}
 {Java Language Specification {\tt https://docs.oracle.com/javase/specs/}},
-  december 2017.
+  December 2017.
+
+\bibitem[www18a]{D:langSpec}
+{D Language Specification \\ {\tt https://dlang.org/spec/class.html}}, January
+  2018.
+
+\bibitem[www18b]{Microsoft:Csharp}
+{Microsoft C\# Programming Guide \\ {\tt
+  https://docs.microsoft.com/de-de/dotnet/csharp/programming-guide/}}, January
+  2018.
 
 \end{thebibliography}

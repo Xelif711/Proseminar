@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.27)  23 JAN 2018 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.27)  23 JAN 2018 16:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -941,36 +941,41 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10])
 (./src/tex/anno.tex (./src/listings/bsp_ImAnn.java) [11]
-(./src/listings/bsp_AnwAnn.java) (./src/listings/bsp_AnwAnnB.java)) [12]
+(./src/listings/bsp_AnwAnn.java) [12] (./src/listings/bsp_AnwAnnB.java))
 (./src/tex/use.tex [13] [14] [15] [16
 
 ]
 Kapitel 3.
-) [17] (./src/tex/conclusion.tex [18]
+[17]) (./src/tex/conclusion.tex [18]
 Kapitel 4.
 [19
 
 ]) (./Thema11.Birk.Jakobi.bbl [20
 
 ]
-Overfull \hbox (247.575pt too wide) in paragraph at lines 20--23
-[]\OT1/cmr/m/n/10.95 JDK 1.1.4 Do-cu-men-ta-ti-on \OT1/pcr/m/n/10.95 https://ww
-w.cs.princeton.edu/courses/archive/fall97/cs461/jdkdocs/index.html\OT1/cmr/m/n/
-10.95 ,
+Overfull \hbox (127.88646pt too wide) in paragraph at lines 20--23
+\OT1/pcr/m/n/10.95 https://www.cs.princeton.edu/courses/archive/fall97/cs461/jd
+kdocs/index.html\OT1/cmr/m/n/10.95 ,
  []
 
 
-Overfull \hbox (0.6236pt too wide) in paragraph at lines 25--27
+Overfull \hbox (6.70694pt too wide) in paragraph at lines 25--27
 []\OT1/cmr/m/n/10.95 Java Lan-gua-ge Spe-ci-fi-ca-ti-on \OT1/pcr/m/n/10.95 http
 s://docs.oracle.com/javase/specs/\OT1/cmr/m/n/10.95 ,
  []
 
+
+Overfull \hbox (55.61655pt too wide) in paragraph at lines 33--36
+\OT1/pcr/m/n/10.95 https://docs.microsoft.com/de-de/dotnet/csharp/programming-g
+uide/\OT1/cmr/m/n/10.95 ,
+ []
+
 ) [21] (./Thema11.Birk.Jakobi.aux) ) 
 Here is how much of TeX's memory you used:
- 15163 strings out of 494893
- 284443 string characters out of 6178671
- 610953 words of memory out of 5000000
- 18105 multiletter control sequences out of 15000+600000
+ 15165 strings out of 494893
+ 284473 string characters out of 6178671
+ 558969 words of memory out of 5000000
+ 18107 multiletter control sequences out of 15000+600000
  19362 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,6n,54p,425b,1348s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -985,7 +990,7 @@ mf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/co
 urier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Thema11.Birk.Jakobi.pdf (24 pages, 267396 bytes).
+Output written on Thema11.Birk.Jakobi.pdf (24 pages, 268832 bytes).
 PDF statistics:
  133 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream

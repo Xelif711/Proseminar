@@ -6,18 +6,24 @@ Diese sind sehr ähnlich zu Javas heutigen statischen inneren Klassen, wobei der
 Also sind Javas innere Klassen eine Art Erweiterung der inneren Klassen von C++.
 In C++11 wurden die inneren Klassen dann um die Möglichkeit einer "'normalen"' inneren Klasse Javas,
  nämlich auch auf nicht-statische Attribute der äußeren Klasse zugreifen zu können, erweitert (\cite{Ellis2007}).
+Es existiert auch die Möglichkeit, eine Namenlose und somit anonyme Klasse oder{\it struct} zu erstellen, jedoch ist dies nur in Verbindung mit einem {\it typedef} möglich.
+Anonmye Klassen sind in C++ auch noch nützlich, um den Verweis auf einen Klasseninhalt so aussehen zu lassen, als ob das referenzierte Objekt in der gleichen Klasse liegen würde.
 
-\section{In C\# und Visual Basic}
+\section{In C\#}
 
-Derartige Strukturen existieren auch in C\# und Visual Basic, welche beide von Microsoft produzierte Weiterentwicklungen von C++ sind.
+Derartige Strukturen existieren auch in C\#, welche eine von Microsoft produzierte Weiterentwicklungen von C++ ist.
 Damit folgen diese auch fast den gleichen Regeln wie die inneren Klassen in C++.
 In C\# existiert überdies die Möglichkeit, auf als {\it protected} oder {\it privat} deklarierte Attribute zuzugreifen.
+In C\# existiert zusätlich die Möglichkeit ein Namenlose Klasse zu definieren, welche direkt von {\it Object} erbt. Diese Anonyme Klasse hatt ähnliche Eigenschaften wie die Anonymem Klassen Javas.
+Sie werden haupsächlich genutz, um "'einen Satz schreibgeschützter Eigenschaften in einem Objekt zu kapseln, ohne zuerst explizit einen Typ für diese Daten definieren zu müssen"'. (\cite{Microsoft:Csharp})
 
+\newpage
 \section{In D}
 
 In der Sprache D, welche 1999 ebenfalls als Weiterentwicklung von C++ entwickelt wurde, existiert das gleiche Konzept der inneren Klassen.
 Es besteht bei als statisch markierten inneren Klassen nur die Möglichkeit auf als statisch deklarierte Attribute der äußeren Klasse zuzugreifen.
 Jedoch wird nicht unterschieden, ob die Klasse innerhalb einer Methode oder Klasse deklariert wurde.
+Es existiert zusätzlich noch die Möglichkeit, Anonyme Klassen zu deklarieren, welche sehr große Ähnlichkeiten zu Javas Anoynmen Klassen besitzen.(\cite{D:langSpec})
 
 \section{In Pyton und Ruby}
 
