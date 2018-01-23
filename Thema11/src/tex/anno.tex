@@ -33,13 +33,6 @@ Wenn die Modifikationen jedoch in verschiedenen Klassen bzw. Methoden gebraucht 
 \subsection{Anwendung / Best Practices}
 
 
-\begin{figure}[hb]
-\lstset{language=Java}
-\lstinputlisting[
-label=lst:AnwAnn,
-escapechar=|,
-caption=Mögliche GUI-Implementierung mit Inneren Klassen] {src/listings/bsp_AnwAnn.java}
-\end{figure}
 
 
 {\bf Beispiel: Eine einfache GUI mit Inneren / Anonyme Klassen}
@@ -56,13 +49,33 @@ So lässt sich der Code prägnant an der Stelle formulieren, wo er gebraucht wir
 Währenddessen sind die betroffenen Klassen sonst komplett unsichtbar.
 Doch hier können auch die anonymen Klassen genutzt werden, denn momentan agiert nur eine Instanz des EventHandlers, die je nach Button einen Unterschied macht. Es kann jedoch deutlich eleganter sein, mehrere "'Einweginstanzen"' zu haben, die dann nur auf einen Button reagieren und dementsprechend nur eine Methode überschreiben müssen.
 Dadurch fällt der Overhead durch if-Cases weg und man kann noch klarer sehen, was durch das Drücken eines bestimmten Buttons ausgelöst werden soll (Listing \ref{lst:AnwAnnB}). Weiterhin kann man sich das Schreiben einer weiteren Klasse sparen.
+\\
+\\
 
-
-
-\begin{figure}[hb]
+\begin{figure}[H]
 \lstset{language=Java}
 \lstinputlisting[
 label=lst:AnwAnnB,
 escapechar=|,
 caption=Mögliche GUI-Implementierung mit Anonymen statt Inneren Klassen] {src/listings/bsp_AnwAnnB.java}
 \end{figure}
+\newpage
+
+\begin{figure}[H]
+\lstset{language=Java}
+\lstinputlisting[
+label=lst:AnwAnn,
+escapechar=|,
+caption=Mögliche GUI-Implementierung mit Inneren Klassen] {src/listings/bsp_AnwAnn.java}
+\end{figure}
+\newpage
+
+\section{Vergleich der Konzepte}
+
+Eingebettete Klassen lassen sich als eine von Javas vielen Ordnungsstrukturen insgesamt wohl am besten auf den gemeinsamen Vorteil der verbesserten Datenkapselung reduzieren, während andere Vorteile eher spezieller Natur sind.
+Dies hat den einfachen Grund, dass alle eingebetteten Klassen die implementierten Funktionalitäten möglichst lokal benutzen. Die innere Klassen sollen nur der äußeren Klasse zur Verfügung stehen,
+eine lokale Klasse kann nur von ihrer umschließenden Methode benutzt werden und die anonyme Klasse gilt nur für eine Instanz. Dass dies jedoch ein zweischneidiges Schwert ist, zeigt der gemeinsame Nachteil:
+Es wird sich darauf festgelegt, eine Klasse nur lokal zu verwenden - besteht jedoch im Nachgang der Bedarf, diese Klasse auch an anderer Stelle zu benutzen. In diesem Fall muss unter Umständen viel im Code geändert werden.
+Dabei sind die "'sperrigeren"' Konzepte wie die inneren und lokalen Klassen offenbar stärker betroffen als die flexiblen anonymen Klassen.
+Dies führt nach unserem Erachten auch dazu, dass die Einsatzbereiche innerer und lokaler Klassen stärker eingegrenzt und eher Spezialfälle sind, während der Gebrauch einer anonymen Klasse
+schnell sowie unkompliziert ist und daher stets in Betracht gezogen werden kann. Wiederum scheint es eher wenig Situationen zu geben, in denen besonders der Einsatz einer lokalen Klasse sinnvoll erscheint.
