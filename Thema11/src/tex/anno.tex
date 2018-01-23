@@ -21,21 +21,21 @@ caption=Beispielimplementierung und -instanziierung einer Anonymen Klasse in Jav
 {\bf Sichtbarkeit \& Zugriff}
 
 Es liegt in der Natur der anonymen Klassen, dass auf sie lediglich über die mit ihr verbundenen Instanz zugegriffen werden kann.
-Weiterhin kann die anonyme Klasse auch nur mit ihren eigenen Attributen bzw. denen der Oberklasse arbeiten.
+Zudem kann die anonyme Klasse auch nur mit ihren eigenen Attributen bzw. denen der Oberklasse arbeiten.
 
 \subsection{Vorteile / Nutzen}
 
 Anonyme Klassen werden hauptsächlich und im Idealfall nur benutzt, wenn man eine modifizierte Instanz einer Klasse bzw. eines Interfaces nur einmal gebraucht wird und somit das Übertragen der Modifikationen in eine (innere) Klasse oder Unterklasse nicht sinnvoll wäre.
-Außerdem werden sie benutzt, um Instanzen von abstrakten Klassen zu erzeugen, da man direkt die abstrakten Methoden überschreiben kann, ohne vorher eine neue Unterklasse der entsprechenden abstrakten Klasse zu deklarieren.
-Weiterhin hilft die Benutzung von anonymen Klassen der Übersichtlichkeit, Lesbarkeit und Verständnis des Codes, da Veränderungen an den Klassen direkt an den benötigten Stellen durchgeführt werden.
-Wenn die Modifikationen jedoch in verschiedenen Klassen bzw. Methoden gebraucht werden, sollte jedoch auf eine innere oder lokale Klasse ausgewichen werden, um die Lesbarkeit des Codes zu erhöhen.
+Ebenfalls werden sie benutzt, um Instanzen von abstrakten Klassen zu erzeugen, da man direkt die abstrakten Methoden überschreiben kann, ohne vorher eine neue Unterklasse der entsprechenden abstrakten Klasse zu deklarieren.
+Die Benutzung von anonymen Klassen hilft der Übersichtlichkeit, Lesbarkeit und Verständnis des Codes, da Veränderungen an den Klassen direkt an den benötigten Stellen durchgeführt werden.
+Wenn die Modifikationen jedoch in verschiedenen Klassen bzw. Methoden gebraucht werden, sollte auf eine innere oder lokale Klasse ausgewichen werden, um die Lesbarkeit des Codes zu erhöhen.
 \newpage
 \subsection{Anwendung / Best Practices}
 
 {\bf Beispiel: Eine einfache GUI mit inneren / anonymen Klassen}
 
 In diesem einfachen Anwendungsbeispiel soll die Anwendung in einem Graphical User Interface (GUI) modelliert werden, die ereignisgesteuert ist.
-Es gibt zwei Buttons, die nach Drücken etwas tun sollen.
+Es gibt zwei Buttons, die nach Anklicken reagieren sollen.
 Die Ereignisbehandlung an sich wird hierbei durch Elemente des Abstract Windows Toolkit (aus jawa.awt) geregelt.
 Um nun die Ereignisbehandlung zu implementieren, brauchen wir eine Klasse, welche das ActionListener-Interface aus dem Toolkit implementiert und die Methode dem Aufrufer entsprechend ändert.
 Insgesamt benötigen wir also 3 Klassen: Die {\it Anwendung} (PressButtons), die {\it GUI} (GUI) und die {\it Ereignisbehandlung} (MyEventHandler). Dabei wird die Ereignisbehandlung nur von der GUI benutzt, die GUI wiederum nur von der Anwendung. Dabei benutzt die Ereignisbehandlung Methoden, die in der Anwendung aufgerufen werden müssen.
@@ -70,9 +70,9 @@ caption=Mögliche GUI-Implementierung mit inneren Klassen] {src/listings/bsp_Anw
 \section{Vergleich der Konzepte}
 
 Eingebettete Klassen lassen sich als eine von Javas vielen Ordnungsstrukturen insgesamt wohl am besten auf den gemeinsamen Vorteil der verbesserten Datenkapselung reduzieren, während andere Vorteile eher spezieller Natur sind.
-Dies hat den einfachen Grund, dass alle eingebetteten Klassen die implementierten Funktionalitäten möglichst lokal benutzen. Die innere Klassen sollen nur der äußeren Klasse zur Verfügung stehen,
-eine lokale Klasse kann nur von ihrer umschließenden Methode benutzt werden und die anonyme Klasse gilt nur für eine Instanz. Dass dies jedoch ein zweischneidiges Schwert ist, zeigt der gemeinsame Nachteil:
-Es wird sich darauf festgelegt, eine Klasse nur lokal zu verwenden - besteht jedoch im Nachgang der Bedarf, diese Klasse auch an anderer Stelle zu benutzen. In diesem Fall muss unter Umständen viel im Code geändert werden.
+Dies hat den einfachen Grund, dass alle eingebetteten Klassen die implementierten Funktionalitäten möglichst lokal nutzen. Die innere Klassen sollen nur der äußeren Klasse zur Verfügung stehen,
+eine lokale Klasse kann nur von ihrer umschließenden Methode genutzt werden und die anonyme Klasse gilt nur für eine Instanz. Dass dies jedoch ein zweischneidiges Schwert ist, zeigt der gemeinsame Nachteil:
+Es wird sich darauf festgelegt, eine Klasse nur lokal zu verwenden - besteht jedoch im Nachgang der Bedarf, diese Klasse auch an anderer Stelle zu nutzen. In diesem Fall muss unter Umständen viel im Code geändert werden.
 Dabei sind die "'sperrigeren"' Konzepte wie die inneren und lokalen Klassen offenbar stärker betroffen als die flexiblen anonymen Klassen.
 Dies führt nach unserem Erachten auch dazu, dass die Einsatzbereiche innerer und lokaler Klassen stärker eingegrenzt und eher Spezialfälle sind, während der Gebrauch einer anonymen Klasse
 schnell sowie unkompliziert ist und daher stets in Betracht gezogen werden kann. Wiederum scheint es eher wenig Situationen zu geben, in denen besonders der Einsatz einer lokalen Klasse sinnvoll erscheint.

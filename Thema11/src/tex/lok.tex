@@ -5,8 +5,8 @@
 
 {\it Lokale Klassen} sind innere Klassen, welche in Methoden eingebunden werden (Listing \ref{lst:ImLok}).
 Im Gegensatz zu den inneren Klassen können hier keine zusätzliche Modifikatoren verwendet werden, da die lokale Klasse nicht das Attribut einer Klasse ist.
-Weiterhin darf sie nicht den Namen der umschließenden Klasse haben.
-Die lokale Klasse darf jedoch von einer anderen Klasse erben und nicht-statische Attribute haben.
+Sie darf nicht den Namen der umschließenden Klasse haben.
+Die lokale Klasse darf jedoch von einer anderen Klasse erben und nicht statische Attribute haben.
 \\
 \begin{figure}[h]
 \lstset{language=Java}
@@ -42,7 +42,7 @@ Ein Student kann eine gewisse Anzahl an Klausuren schreiben, aber sonst beschäf
 Je nachdem, wie gut er sich vorbereitet hat, kann er die Klausur bestehen oder durchfallen.
 Jedoch richtet sich das Bestehen zusätzlich noch nach dem Schwierigkeitsgrad der Klausur.
 Bei guter Vorbereitung besteht der Student immer, sonst nur wenn die  Schwierigkeit der Klausur mindestens dem Vorbereitungsgrad entspricht.
-Hier können wir passend eine lokale Klasse benutzen, da die KLasse {\it Klausur} sonst nirgendwo genutzt würde, während die Methode {\it klausurenSchreiben} diese mehrmals instanziieren und benutzen muss.
+Hier können wir passend eine lokale Klasse nutzen, da die KLasse {\it Klausur} sonst nirgendwo genutzt würde, während die Methode {\it klausurenSchreiben} diese mehrmals instanziieren und nutzen muss.
 Weiterhin kann so problemlos auf das private Attribut Schwierigkeit zugegriffen werden.
 \\
 \newpage
