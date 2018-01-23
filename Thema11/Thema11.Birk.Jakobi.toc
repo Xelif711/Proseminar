@@ -1,14 +1,22 @@
 \contentsline {chapter}{\numberline {1}Einf\IeC {\"u}hrung}{1}
 \contentsline {section}{\numberline {1.1}Idee / Herkunft}{1}
-\contentsline {chapter}{\numberline {2}Hauptteil}{3}
+\contentsline {chapter}{\numberline {2}Eingebettete Klassen}{3}
 \contentsline {section}{\numberline {2.1}(Statische) Innere Klassen}{3}
 \contentsline {subsection}{\numberline {2.1.1}Implementierung / Instanziierung}{3}
-\contentsline {subsection}{\numberline {2.1.2}Vorteile und Nutzen}{6}
+\contentsline {subsection}{\numberline {2.1.2}Vorteile und Nutzen}{5}
 \contentsline {subsection}{\numberline {2.1.3}Anwendungen / Best Practices}{7}
-\contentsline {section}{\numberline {2.2}Anonyme \& Lokale Klassen}{9}
-\contentsline {subsection}{\numberline {2.2.1}Implementierung}{9}
-\contentsline {subsection}{\numberline {2.2.2}Vorteile / Nutzen}{12}
-\contentsline {subsection}{\numberline {2.2.3}Anwendung / Best Practices}{13}
-\contentsline {section}{\numberline {2.3}Weiteres}{15}
-\contentsline {chapter}{\numberline {3}Zusammenfassung und Fazit}{17}
-\contentsline {chapter}{Literaturverzeichnis}{18}
+\contentsline {section}{\numberline {2.2}Lokale Klassen}{8}
+\contentsline {subsection}{\numberline {2.2.1}Implementierung}{8}
+\contentsline {subsection}{\numberline {2.2.2}Vorteile / Nutzen}{9}
+\contentsline {subsection}{\numberline {2.2.3}Anwendung / Best Practices}{9}
+\contentsline {section}{\numberline {2.3}Anonyme Klassen}{11}
+\contentsline {subsection}{\numberline {2.3.1}Implementierung}{11}
+\contentsline {subsection}{\numberline {2.3.2}Vorteile / Nutzen}{12}
+\contentsline {subsection}{\numberline {2.3.3}Anwendung / Best Practices}{13}
+\contentsline {chapter}{\numberline {3}Verwandte Konzepte in anderen Sprachen}{19}
+\contentsline {section}{\numberline {3.1}In C++}{19}
+\contentsline {section}{\numberline {3.2}In C\# und Visual Basic}{19}
+\contentsline {section}{\numberline {3.3}In D}{19}
+\contentsline {section}{\numberline {3.4}In Pyton und Ruby}{19}
+\contentsline {chapter}{\numberline {4}Zusammenfassung und Fazit}{21}
+\contentsline {chapter}{Literaturverzeichnis}{22}

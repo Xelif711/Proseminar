@@ -1,13 +1,14 @@
 \chapter{Einführung}
 \section{Idee / Herkunft}
 
-Innere bzw. Eingebettete Klassen wurden in Java 1.1 eingeführt. \cite{Oracle:JDK_Doku1.1.4}
-Sie wurden Hauptsächlich eingeführt, da die Java-Designer erkannt hatten, dass die Sprache eine Art "'Funktionszeiger"' benötigt, welcher jedoch mit der Sprachkonstruktion von Java nicht zu realisieren ist.
-Diese Notwendigkeit kam Haupsächlich von der Existens von Funktionszeigern in anderen Programmiersprachen, wie z.B. C oder Lisp.
+Eingebettete Klassen wurden in Java 1.1 eingeführt. \cite{Oracle:JDK_Doku1.1.4}
+Sie wurden hauptsächlich eingeführt, da die Java-Designer erkannt hatten, dass die Sprache eine Art "'Funktionszeiger"' benötigt, welcher jedoch mit der Sprachkonstruktion von Java nicht zu realisieren ist.
+Diese Notwendigkeit kam unter anderem von der Existenz der Funktionszeiger in anderen Programmiersprachen, wie z.B. C oder Lisp.
+Auch andere Konzepte wie Callbacks oder Adapterklassen lassen sich elegant mit dem Werkzeug der eingebetteten Klassen lösen.
 
-Die Möglichkeit, Innere Klassen verschiedenster Art zu benutzen, macht es für die Programmiere einfacher Callbacks und Iteratoren als Adapterklassen zu implemtieren, was vorher umständlich und mit relativ viel Aufwand verbunden war.
-Es gibt insgesamt vier verschiedene Arten von Eingebetteten Klassen, die Inneren Klassen, die Statischen Inneren Klassen, die Lokalen Klassen und die Anonymen Klassen, welche sich jeweils Leicht in der Implementierung, in der Datenkapselung und in den Möglichen Funktionalitäten unterscheiden.
-Speziell sind Innere- und Statische Innere Klassen nicht sehr unterschiedlich, unterscheiden sich jedoch zusammen relativ stark von den Lokalen Klassen.
-Die Anonymen Klassen sind eine Allgemeine Unterart der Inneren Klassen, wobei sie sich besonders in der Implementierung von den anderen Eingebetteten Klassen unterscheidet.
+Es gibt insgesamt vier verschiedene Arten von eingebetteten Klassen: Die {\it inneren} {\it Klassen}, die {\it statischen} {\it inneren} {\it Klassen}, die {\it lokalen} {\it Klassen}
+und die {\it anonymen} {\it Klassen}.
+Diese unterscheiden sich jeweils in der Implementierung, in der Datenkapselung und in den möglichen Funktionalitäten.
+Aufgrund der semantischen Nähe werden die statischen inneren Klassen sowie die inneren Klassen jedoch zusammen vorgestellt.
 
 \newpage

@@ -1,34 +1,42 @@
 public class HandyLaden{
     public static void main(String[] args){
-        SamsongLadevorgang lv = new SamsongLadevorgang();
+        ALadevorgang lv = new ALadevorgang();
+
         Ladegeraet l = lv.new Adapter();
         lv.setLadegeraet(l);
         lv.aufladen();
     }
 }
-public class SamsongLadevorgang{
+public class HandyA{
     private Ladegeraet l;
+
     public Ladegeraet getLadegeraet(){
         return l;
     }
+
     public void setLadegeraet(Ladegeraet l){
         this.l = l;
     }
+
     public void aufladen(){
         l.laden();
         System.out.println("Vollstaendig aufgeladen!");
     }
+
     class Adapter implements Ladegeraet{
-        LadegeraetEiPhone lp = new LadegeraetEiPhone();
+        LadegeraetB lp = new LadegeraetB();
         public void laden(){
-            lp.eiPhoneLaden();
+            lp.BLaden();
         }
     }
 }
+
 interface Ladegeraet{
     public void laden();
 }
-class LadegeraetEiPhone{
-    public void eiPhoneLaden(){
+
+class LadegeraetB{
+    public void BLaden(){
+
     }
 }

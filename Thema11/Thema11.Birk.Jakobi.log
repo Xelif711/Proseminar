@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.27)  22 JAN 2018 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.27)  23 JAN 2018 14:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -893,6 +893,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 (./src/tex/intro.tex
 Kapitel 1.
+
+Overfull \hbox (5.54553pt too wide) in paragraph at lines 4--8
+\OT1/cmr/m/n/10.95 ein-gef[]uhrt, da die Java-Designer er-kannt hat-ten, dass d
+ie Spra-che ei-ne Art \Funktionszeiger\
+ []
+
 [1
 
 
@@ -914,42 +920,50 @@ LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 4.
 ) [3] (./src/listings/bsp_InstInn.java)
-Underfull \hbox (badness 10000) in paragraph at lines 30--40
+(./src/listings/bsp_SZ_Inn.java)
+Underfull \hbox (badness 10000) in paragraph at lines 42--55
 
  []
 
-[4] (./src/listings/bsp_SZ_Inn.java)
-Underfull \hbox (badness 10000) in paragraph at lines 45--58
+[4] (./src/listings/bsp_Zcl_A.java)
+Underfull \hbox (badness 10000) in paragraph at lines 64--77
 
  []
 
-[5] (./src/listings/bsp_Zcl_A.java)
-Underfull \hbox (badness 10000) in paragraph at lines 69--82
+[5] [6] (./src/listings/bsp_AnwInn.java) [7]) (./src/tex/lok.tex
+(./src/listings/bsp_ImLok.java)
+Underfull \hbox (badness 10000) in paragraph at lines 13--24
 
  []
 
-[6] [7] (./src/listings/bsp_AnwInn.java) [8]) (./src/tex/anno.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--24
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 37--45
+
+ []
+
+[9] (./src/listings/bsp_AnwLok.java) [10]) (./src/tex/anno.tex
 (./src/listings/bsp_ImAnn.java)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ [11]
+[12] (./src/listings/bsp_AnwAnn.java) (./src/listings/bsp_AnwAnnB.java)
+[13]) (./src/tex/use.tex [14] [15] [16] [17] [18
 
-[9] (./src/listings/bsp_ImLok.java)
-Underfull \hbox (badness 10000) in paragraph at lines 39--51
-
- []
-
-[10] [11] [12] (./src/listings/bsp_AnwAnn.java)
-(./src/listings/bsp_AnwAnnB.java)
-Underfull \hbox (badness 10000) in paragraph at lines 85--104
-
- []
-
-[13] [14] (./src/listings/bsp_AnwLok.java)) (./src/tex/use.tex)
-(./src/tex/conclusion.tex [15] [16]
+]
 Kapitel 3.
-[17
+) [19] (./src/tex/conclusion.tex [20]
+Kapitel 4.
+[21
 
-]) (./Thema11.Birk.Jakobi.bbl [18
+]) (./Thema11.Birk.Jakobi.bbl [22
 
 ]
 Overfull \hbox (247.575pt too wide) in paragraph at lines 20--23
@@ -964,30 +978,34 @@ Overfull \hbox (0.6236pt too wide) in paragraph at lines 25--27
 s://docs.oracle.com/javase/specs/\OT1/cmr/m/n/10.95 ,
  []
 
-) [19] (./Thema11.Birk.Jakobi.aux) ) 
+) [23] (./Thema11.Birk.Jakobi.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 15159 strings out of 494893
- 284415 string characters out of 6178671
- 521939 words of memory out of 5000000
- 18104 multiletter control sequences out of 15000+600000
+ 15163 strings out of 494893
+ 284443 string characters out of 6178671
+ 724960 words of memory out of 5000000
+ 18105 multiletter control sequences out of 15000+600000
  19362 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,6n,54p,424b,1352s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dv
-ips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/co
-urier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8
-a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Thema11.Birk.Jakobi.pdf (22 pages, 264793 bytes).
+ 55i,6n,54p,425b,1352s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/uc
+rb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on Thema11.Birk.Jakobi.pdf (26 pages, 266682 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 140 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
